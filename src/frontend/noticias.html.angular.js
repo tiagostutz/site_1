@@ -42,8 +42,8 @@
       $scope.listaPrincipalPromise.then(function(dataResponse) {
         $scope.noticias = dataResponse.data;
         $scope.noticiaRefURL = $scope.url($scope.noticias[0]);
-        $rootScope.pageTitle = $scope.noticias[0].titulo;
-        return $rootScope.pageDescription = $scope.noticias[0].texto.replace(/<[^>]+>/gm, '').substring(0, 400) + "...";
+        // $rootScope.pageTitle = $scope.noticias[0].titulo;
+        // return $rootScope.pageDescription = $scope.noticias[0].texto.replace(/<[^>]+>/gm, '').substring(0, 400) + "...";
       });
     }
     $scope.noticiaLateralPromise = noticiaService.obterNoticias(15, 0);
