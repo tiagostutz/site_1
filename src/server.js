@@ -5,7 +5,7 @@ var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
 var compress       = require('compression');
 var app            = express();
-var prerender      = require('prerender-node').set('prerenderServiceUrl', 'http://localhost:3000/').set('prerenderToken', 's7zDfbP07ipE4JZKETcm');
+var prerender      = require('prerender-node').set('prerenderServiceUrl', 'http://service.prerender.io/').set('prerenderToken', 's7zDfbP07ipE4JZKETcm');
 var request           = require('request');
 
 port = process.env.PORT || 8000;
