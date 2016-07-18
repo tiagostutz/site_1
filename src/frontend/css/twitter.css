@@ -1,0 +1,30 @@
+.tweets ul {
+	padding-top: 35px;
+	background: transparent url(/img/ui/twitter.png) no-repeat scroll 0px 0px;
+}
+
+.tweets li {
+	color: white;
+	line-height: 15px;
+}
+
+.tweets_txt {
+	padding-bottom: 18px;
+}
+
+.tweets_txt a:before{
+	content: " ";
+	display: block;
+}
+
+.tweets_txt a {
+	color: white;
+	font-weight: bold;
+}
+
+.box-center .tweets {
+	width: 260px;
+	padding: 25px 40px 60px 40px;
+	height: 205px;
+	background-color: #56acee;
+}

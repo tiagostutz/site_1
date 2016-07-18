@@ -1,0 +1,2760 @@
+@import "reset.css";
+@import "global.css";
+@import "font/style.css";
+
+
+
+html{
+
+}
+a{
+	text-decoration:none;
+}
+h1,h2,h3,h4,h5{
+	font-weight: normal;
+}
+a:hover{
+	text-decoration:underline;
+}
+body{
+	font-size: 14px;
+	color: #111111;
+	font-family: 'Avenir Next LT Pro Regular';
+}
+
+#main-top .center
+, #main-bottom .center{
+	margin:0 auto;
+	width: 80%;
+}
+ #main-top{
+ 	background-color: #fafbfa;
+ 	padding-bottom: 90px;
+ 	float: left;
+ 	width: 100%;
+ }
+
+/*HEADER*/
+
+header{
+	width: 100%;
+	height: 145px;
+}
+header h1{
+	float: left;
+	margin: 25px 0 17px 0;
+}
+header h1 a{
+	background: url(../img/tit/logo.png) no-repeat;
+	width: 182px;
+	height: 60px;
+	overflow: hidden;
+	text-indent: -999em;
+	display: block;
+}
+header #nav{
+	width: 87%;
+	padding: 0 60px;
+}
+header #nav nav{
+	float: right;
+	margin-top: 30px;
+}
+
+header .nav-blog{
+	background-color: #d60031;
+	padding: 8px 60px;
+	width: 87%;
+	height: 24px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+header .nav-blog h2{
+	float: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+	color: #ffffff;
+	font-size: 11px;
+	margin-top: 8px;
+}
+header .nav-blog h2 span{
+	font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+	font-weight: normal;
+}
+header .nav-blog ul{
+	float: right;
+}
+header .nav-blog li{
+	float: left;
+	padding: 7px 29px
+}
+header .nav-blog li:last-child{
+	background: url(../img/bg/border.png) repeat-y left;
+	padding-right: 0;
+}
+header .nav-blog li:first-child{
+	background: url(../img/bg/border.png) repeat-y right;
+}
+header .nav-blog li a{
+	font-style: 11px;
+	color: #ffffff;
+}
+header nav ul li{
+	float: left;
+	margin: 10px;
+}
+header nav ul li:last-child{
+	margin-right: 0;
+}
+header nav ul li a{
+	color: #555555;
+	text-transform: uppercase;
+	font-size: 12px;
+	border: 3px solid #fafbfa;
+	padding: 14px;
+}
+header nav ul li a:hover
+, header nav ul li a.ativo{
+	color: #d60031;
+	text-decoration: none;
+	font-family: 'Avenir Next LT Pro Demi';
+	border: 3px solid #d60031;
+}
+
+/*CONTENT*/
+
+.content{
+	clear: both;
+}
+.box-left img{
+	width:100%;
+	height: 476px;
+}
+/*HOME*/
+
+/*Destaque home*/
+
+#destaque aside{
+ 	float: left;
+ 	width: 30%;
+ 	padding: 0 15px;
+ 	background-color: #d60031;
+	    margin-right: -1px;
+    margin-bottom: -2px;
+
+ }
+ #destaque aside li{
+  	padding: 25px 0;
+  	text-align: center;
+  	border-bottom: 1px solid #b6002a;
+  	border-top: 1px solid #df3f63;
+}
+#destaque aside li a{
+  	color: #ffffff;
+  	font-size: 16px;
+  	text-transform: uppercase;
+  	line-height: 120%;
+	width: 150px;
+	margin: 0 auto;
+	display: block;
+}
+#destaque aside li a:hover{
+	text-decoration: underline;
+}
+#destaque section{
+  	float: left;
+	width: 65.8%;
+}
+#destaque section .slider{
+	height: 360px;
+}
+#destaque section .slider li{
+	float: left;
+	height: 360px;
+	position: relative;
+}
+#destaque .owl-pagination{
+	display:none;
+}
+#owl-demo2 .item2.active{
+	border-bottom: 5px solid red;
+}
+#owl-demo2 .item2{
+	border-bottom: 5px solid #dddddd;
+}
+#owl-demo2 .item2 img{
+	display: block;
+	width: 40px;
+	height: 40px;
+
+    padding-bottom: 10px;
+}
+#owl-demo2 {
+	height:105px;
+	position:relative;
+
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: 360px;
+}
+#owl-demo2 .item2{
+    text-align: center;
+}
+ #owl-demo2 .owl-next, .owl-prev{
+	position:absolute;
+	top:14px;
+	font-size:25px;
+	font-size: 20px !important;
+	color: red !important;
+	background:transparent !important;
+	font-weight:700
+}
+#destaque .owl-next, #destaque .owl-prev{
+	position:absolute;
+	top:43%;
+	font-size:25px;
+	font-size: 33px !important;
+	background:transparent !important;
+	font-weight:700;
+	color: red !important;
+}
+
+.owl-prev{
+	left:-10px
+}
+.owl-next{
+	right:-10px;
+}
+.owl-theme .owl-controls{
+	margin-top:0px !important;
+}
+#destaque a{
+
+}
+#destaque a,
+#destaque a:link,
+#destaque a:visited,
+#destaque a:hover,
+#destaque a p {
+	text-decoration: none;
+}
+#destaque p.text_holder {
+	position: absolute;
+	top: 0px;
+	padding: 200px 20px 115px 20px;
+	text-transform: uppercase;
+	font-size: 1.575rem;
+	font-weight: normal;
+	text-decoration: none;
+	color: white;
+	line-height: 2.6rem;
+	background: rgba(0,0,0,.67);
+	text-align: center;
+
+}
+
+
+#destaque a img{
+	width:680px;
+	height:380px;
+	position:relative
+}
+/*Menu oque deseja*/
+
+.sub-menu{
+	clear: both;
+	height: 150px;
+	width: 100%;
+}
+.sub-menu h2{
+	float: left;
+	width: 33%;
+	text-align: center;
+	padding: 60px 0 0 0;
+	font-size: 20px;
+	height: 90px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #cfd6d7;
+	font-family: 'Avenir LT Std 95 Black';
+}
+.sub-menu h2 span{
+	border-bottom: 6px solid #ffffff;
+	padding-bottom: 13px;
+}
+
+.sub-menu li{
+	float: left;
+	width: 16.4%;
+	text-align: center;
+	padding-top: 60px;
+	height: 90px;
+}
+.sub-menu li.item1{
+	background: #e9887f url(../img/ui/seta-item1.png) no-repeat left center;
+}
+.sub-menu li.item2{
+	background: #e26662 url(../img/ui/seta-item2.png) no-repeat left center;
+}
+.sub-menu li.item3{
+	background: #dc4049 url(../img/ui/seta-item3.png) no-repeat left center;
+	padding-top: 50px;
+	height: 100px;
+}
+.sub-menu li.item4{
+	background: #d60031 url(../img/ui/seta-item4.png) no-repeat left center;
+	width: 16.4%;
+}
+.sub-menu li a{
+	line-height: 130%;
+	color: #ffffff;
+	font-size: 14px;
+	width: 135px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	display: block;
+
+}
+.sub-menu li a:hover{
+	text-decoration: underline;
+}
+
+/*Box padrao Noticias*/
+
+.box-noticia{
+	padding: 50px 4% 35px 3.7%;
+	position: relative;
+	height: 197px;
+}
+.box-noticia h3 a{
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 130%;
+	margin-bottom: 5px;
+	color: #111111;
+	display: block;
+	font-family: 'Avenir Next LT Pro Demi';
+}
+.box-noticia .category{
+	color: #cfc9cd;
+	display: block;
+	font-size: 12px;
+	font-family: 'Avenir Next LT Pro Italic';
+}
+.box-noticia .date{
+	position: absolute;
+	bottom: 35px;
+	left: 40px;
+	font-family: 'Avenir Next LT Pro Demi';
+	font-size: 10px;
+}
+
+/*InfoGreve*/
+
+.info-greve img{
+	float: left;
+	width:66%;
+	height:302px;
+
+}
+.info-greve .box-noticia{
+	width: 25%;
+	float: left;
+	background-color: #ffffff;
+	height:217px
+}
+
+/**/
+
+.box-left{
+	width: 32%;
+	float: left;
+	background-color: #d60031;
+}
+.box-left a{
+	margin: 24px auto;
+	display: block;
+	padding: 13px 12px;
+	width: 230px;
+	color: #ffffff;
+	text-transform: uppercase;
+	height: 14px;
+	text-align: center;
+	border: 3px solid #ffffff;
+	font-family: 'Avenir Next LT Pro Demi';
+	font-weight: bold;
+	font-size: 13px;
+}
+.box-center{
+	width: 34%;
+	float: left;
+}
+.box-center .box-noticia{
+	background-color: #ffffff;
+}
+.box-center .tweets{
+
+	padding: 50px 12% 35px;
+	height: 205px;
+	background-color: #56acee;
+}
+.box-right{
+	width: 33%;
+	float: left;
+}
+.box-right .box-noticia{
+	background-color: #d60031;
+	color: #ffffff;
+}
+.box-right .box-noticia h3 a{
+	color: #ffffff;
+}
+
+.facebook{
+	border: 2px solid #4a66b6;
+	height: 201px;
+	padding: 50px 13% 35px ;
+}
+.facebook iframe{
+	width:100% !important;
+}
+/*Advogados home*/
+
+.destaque-advogados{
+	clear: both;
+	background-color: #cfc9cd;
+	height: 160px;
+	position: relative;
+	margin-bottom: 60px;
+}
+.destaque-advogados ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.destaque-advogados li{
+	float: left;
+	width: 170px;
+	height: 160px;
+}
+.destaque-advogados li img{
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1); /* Webkit Nightlies & Google Chrome Canary */
+	/* css transitions */
+	-webkit-transition: all .4s ease;  /* Safari 3.2+, Chrome */
+	-moz-transition: all .4s ease;  /* Firefox 4-15 */
+	-o-transition: all .4s ease;  /* Opera 10.5–12.00 */
+	transition: all .4s ease;
+}
+.destaque-advogados li a:hover img{
+	filter: none; /* Applies to FF + IE */
+	-webkit-filter: grayscale(0);
+	/* css transitions */
+	-webkit-transition: all .3s ease;  /* Safari 3.2+, Chrome */
+	-moz-transition: all .3s ease;  /* Firefox 4-15 */
+	-o-transition: all .3s ease;  /* Opera 10.5–12.00 */
+	transition: all .3s ease;  /* Firefox 16+, Opera 12.50+ */
+}
+.destaque-advogados .previous
+, .destaque-advogados .next{
+	position: absolute;
+	top: 55px;
+	z-index: 99;
+	border: none;
+	overflow: hidden;
+	text-indent: -999em;
+	width: 30px;
+	height: 50px;
+	cursor: pointer;
+}
+.destaque-advogados .previous{
+	background: url(../img/ui/previous-advogados.png) no-repeat;
+	left: -20px;
+}
+.destaque-advogados .next{
+	background: url(../img/ui/next-advogados.png) no-repeat;
+	right: -20px;
+}
+
+/*Destaque blog*/
+
+.destaque-blog{
+	margin-bottom: 50px;
+	float: left;
+	color: #111111;
+	width:100%
+}
+.destaque-blog li{
+	float: left;
+	width: 29.3%;
+	padding: 0 2%;
+}
+.destaque-blog li:last-child{
+	margin-right: 0;
+}
+.destaque-blog h3 a{
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 130%;
+	color: #111111;
+	margin-bottom: 5px;
+	display: block;
+	font-family: 'Avenir Next LT Pro Demi';
+}
+.destaque-blog .category{
+	color: #cfc9cd;
+	display: block;
+	font-size: 12px;
+	margin-bottom: 35px;
+}
+.destaque-blog p{
+	line-height: 150%;
+}
+.destaque-blog p a{
+	color: #d60031;
+	font-style: italic;
+	font-weight: bold;
+	font-family: 'Avenir Next LT Pro Demi';
+}
+.lei-8112{
+	clear: both;
+	width: 920px;
+	padding-top: 20px;
+	margin: 0 auto 70px auto;
+	height: 37px;
+	font-size: 18px;
+	color: #000000;
+	text-align: center;
+	border: 3px solid #f5f6f6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+ .lei-8112 a{
+ 	color: #d60031;
+ 	margin-left: 5px;
+ }
+
+ /*ESCRITORIOS*/
+.back-branco{
+	background: #ffffff;
+	padding-bottom: 50px;
+}
+
+.info-escritorios{
+	width: 100%;
+	margin: 0 auto;
+}
+.info-escritorios img{
+	margin: 0px 0 70px 0;
+	width:100%;
+}
+.info-escritorios ul li{
+	float: left;
+	width: 205px;
+	margin-right: 20px;
+	padding-bottom: 130px;
+	text-align:left
+}
+.info-escritorios ul{
+	width:90%;
+	margin:0 auto
+}
+.info-escritorios ul li.ff{
+	margin-right: 0;
+}
+.info-escritorios ul li h3{
+	background: url(../img/ui/marcador-endereco.png)no-repeat left center;
+	padding-left: 18px;
+	display: block;
+	height: 20px;
+	font-size: 19px;
+	font-family: 'Avenir Next LT Pro Demi';
+}
+.info-escritorios ul li p{
+	color: #111111;
+	margin: 12px 0 12px 0;
+	line-height: 17px;
+}
+.explicacao p , .explicacao ul li p, .explicacao ul li a{
+	font-family: 'Avenir Next LT Pro Regular';
+	font-size: 12px;
+}
+.explicacao h3{
+	font-family: 'Avenir Next LT Pro Demi';
+	font-size: 20px;
+	font-weight: bold;
+	color: #111111;
+}
+.info-escritorios ul li a{
+	color: #d60031;
+	font-weight: bold;
+}
+
+/*ESPECIALIDADES*/
+
+
+.info-especialidades{
+	width: 880px;
+	margin: 0 auto;
+}
+h2.aspas{
+	font-size: 24px;
+	font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+	margin: 80px 0 65px 0;
+    width: 100%;
+    text-align: center;
+    color: #888888;
+    height: 20px;
+    float: left;
+}
+h2.aspas span{
+	height: 14px;
+	width: 22px;
+	text-indent: -999em;
+	overflow: hidden;
+	display: inline-block;
+}
+h2.aspas .aspas-left{
+	background: url(../img/ui/aspas-left.png) no-repeat left top;
+	margin-right: 5px;
+}
+h2.aspas .aspas-right{
+	background: url(../img/ui/aspas-right.png) no-repeat right top;
+	margin-left: 5px;
+}
+.info-especialidades ul.abas{
+	margin-bottom: 35px;
+	float: left;
+}
+.info-especialidades ul.abas li{
+	float: left;
+	width: 220px;
+	height: 274px;
+	border-bottom: 3px solid #d60031;
+}
+.info-especialidades ul.abas li img{
+	margin-bottom: 10px;
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1); /* Webkit Nightlies & Google Chrome Canary */
+	/* css transitions */
+	-webkit-transition: all .4s ease;  /* Safari 3.2+, Chrome */
+	-moz-transition: all .4s ease;  /* Firefox 4-15 */
+	-o-transition: all .4s ease;  /* Opera 10.5–12.00 */
+	transition: all .4s ease;
+}
+.info-especialidades ul.abas li img.ativo{
+	filter: none; /* Applies to FF + IE */
+	-webkit-filter: grayscale(0);
+	/* css transitions */
+	-webkit-transition: all .3s ease;  /* Safari 3.2+, Chrome */
+	-moz-transition: all .3s ease;  /* Firefox 4-15 */
+	-o-transition: all .3s ease;  /* Opera 10.5–12.00 */
+	transition: all .3s ease;  /* Firefox 16+, Opera 12.50+ */
+}
+.info-especialidades ul.abas li a{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: 'Avenir Next LT Pro Demi';
+	line-height: 120%;
+	color: #b7b7b7;
+	width: 157px;
+	padding: 20px 20px 10px 20px;
+	border: 3px solid #cfc9cd;
+	border-bottom: 0 solid #ffffff;
+	display: block;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.info-especialidades ul.abas li a.ativo{
+	border: 3px solid #d60031;
+	border-bottom: 3px solid #ffffff;
+	color: #000000;
+	position: absolute;
+}
+.info-especialidades .box{
+	width: 840px;
+	margin: 0 auto;
+}
+.info-especialidades .box p{
+	font-family: 'Avenir Next LT Pro Italic';
+	font-size: 18px;
+	line-height: 120%;
+}
+.info-especialidades .box ul{
+	margin-top: 40px;
+}
+.info-especialidades .box ul li{
+	margin-bottom: 15px;
+}
+.info-especialidades .box ul li strong{
+	text-transform: uppercase;
+	color: #d60031;
+}
+.info-especialidades .box ul li p{
+	font-size: 12px;
+	font-family: 'Avenir Next LT Pro Italic';
+	font-weight: bold;
+	line-height: 130%;
+}
+
+
+/*BLOG*/
+.info-blog{
+	width: 68%;
+	float: left;
+}
+.bt-compartilhamento{
+	margin: 20px 0 20px 0;
+	width: 300px;
+	background: #f4f4f4;
+	height: 35px;
+}
+.bt-compartilhamento ul li{
+	float: left;
+	margin: 7px 0 0 10px;
+	width: 90px;
+}
+.content-blog{
+	width: 85%;
+	margin: 0 auto;
+}
+
+.content-blog .title
+, .content-blog .title a{
+	font-size: 28px;
+	text-transform: uppercase;
+	margin: 50px 0 20px 0;
+	color: #111111;
+	line-height: 120%;
+}
+.content-blog .date{
+	font-size: 10px;
+	color: #111111;
+	font-family: 'Avenir Next LT Pro Demi';
+}
+.content-blog .category{
+	font-size: 12px;
+	margin-left: 5px;
+	color: #cfc9cd;
+	font-family: 'Avenir Next LT Pro Italic';
+}
+.content-blog p{
+	line-height: 20px;
+}
+.content-blog p.fonte{
+	margin: 50px 0 65px 0;
+}
+
+
+
+
+
+/*BLOG - ASIDE LATERAL*/
+aside{
+	float: right;
+	width: 32%;
+}
+.assec-imprensa{
+	background: #cfd6d7;
+	padding: 50px 40px;
+}
+.assec-imprensa h3 , .noticias h3{
+	font-size: 20px;
+	font-family: 'Avenir LT Std 95 Black';
+	text-transform: uppercase;
+	margin-bottom: 28px;
+	padding-bottom: 18px;
+	color: #ffffff;
+	line-height: 25px;
+	border-bottom: 5px solid #ffffff;
+}
+
+.assec-imprensa ul li a , .noticias ul li a{
+	font-family: 'Avenir Next LT Pro Demi';
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+
+.noticias{
+	margin-top: 50px;
+	padding: 0 40px 0 40px;
+}
+
+.noticias h3{
+	color: #cfd6d7;
+	border-bottom: 5px solid #cfd6d7;
+	font-family: 'Avenir Next LT Pro Regular';
+}
+
+
+.noticias ul li{
+	margin-bottom: 35px;
+}
+.noticias ul li p{
+	font-size: 10px;
+	font-family: 'Avenir Next LT Pro Demi';
+	margin-bottom: 10px;
+}
+.noticias ul li a{
+	text-transform: uppercase;
+	color: #111111;
+	line-height: 20px;
+}
+
+
+
+/*COMENTS-BLOG*/
+
+.blog-coments{
+	border: 3px solid #cfc9cd;
+	margin-bottom: 50px;
+}
+.box-comentarios{
+	width: 540px;
+	margin: 20px auto;
+}
+.box-comentarios h2{
+	color: #666666;
+	font-size: 14px;
+	font-family: 'Avenir LT Std 55 Roman';
+
+}
+
+/*CLIENTES*/
+
+.img-clientes{
+	padding: 50px 0 200px 0;
+}
+.img-clientes ul{
+	margin-left: 70px;
+}
+.img-clientes ul li{
+	float: left;
+	border: 3px solid #d4d4d4;
+	 margin: 0 20px 16px 0;
+}
+.img-clientes li img{
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1); /* Webkit Nightlies & Google Chrome Canary */
+	/* css transitions */
+	-webkit-transition: all .4s ease;  /* Safari 3.2+, Chrome */
+	-moz-transition: all .4s ease;  /* Firefox 4-15 */
+	-o-transition: all .4s ease;  /* Opera 10.5–12.00 */
+	transition: all .4s ease;
+}
+.img-clientes li:hover img{
+	filter: none; /* Applies to FF + IE */
+	-webkit-filter: grayscale(0);
+	/* css transitions */
+	-webkit-transition: all .3s ease;  /* Safari 3.2+, Chrome */
+	-moz-transition: all .3s ease;  /* Firefox 4-15 */
+	-o-transition: all .3s ease;  /* Opera 10.5–12.00 */
+	transition: all .3s ease;  /* Firefox 16+, Opera 12.50+ */
+}
+
+/*CONTATO*/
+
+.form-contato{
+	padding: 50px 40px;
+
+}
+.form-contato ul li select, .form-contato input, .form-contato textarea{
+	width: 96%;
+	color: #888888;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'Avenir Next LT Pro Italic';
+	border: 3px solid #f5f6f6;
+	border-radius: 5px;
+	  padding: 12px 0 12px 30px;
+	  background-color: #ffffff;
+}
+.form-contato ul li select{
+	border: 0;
+}
+.form-contato ul li{
+	margin-bottom: 10px;
+}
+.form-contato input.enviar{
+	background: #d60031;
+	color: #ffffff;
+	border:none;
+	cursor: pointer;
+}
+.form-contato input.enviar{
+	width: 103%;
+}
+.form-contato ul li select{
+	height: 50px;
+	text-indent: 20px;
+	background: url(../img/ui/seta-baixo.png) no-repeat 93% 22px;
+	width: 105%;
+}
+.customselect{
+	width: 99%;
+	overflow: hidden;
+	border: 3px solid #f5f6f6;
+}
+.equipe{
+	padding: 0 40px 140px 40px;
+}
+.equipe h3{
+	font-size: 16px;
+	font-family: 'Avenir Next LT Pro Regular';
+	font-style: italic;
+	text-transform: uppercase;
+	color: #555555;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.equipe ul li{
+	float: left;
+	margin-right: 14px;
+}
+.equipe li:last-child{
+	margin-right: 0;
+}
+.equipe li img{
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1); /* Webkit Nightlies & Google Chrome Canary */
+	/* css transitions */
+	-webkit-transition: all .4s ease;  /* Safari 3.2+, Chrome */
+	-moz-transition: all .4s ease;  /* Firefox 4-15 */
+	-o-transition: all .4s ease;  /* Opera 10.5–12.00 */
+	transition: all .4s ease;
+}
+.equipe li:hover img{
+	filter: none; /* Applies to FF + IE */
+	-webkit-filter: grayscale(0);
+	/* css transitions */
+	-webkit-transition: all .3s ease;  /* Safari 3.2+, Chrome */
+	-moz-transition: all .3s ease;  /* Firefox 4-15 */
+	-o-transition: all .3s ease;  /* Opera 10.5–12.00 */
+	transition: all .3s ease;  /* Firefox 16+, Opera 12.50+ */
+}
+
+.owl-theme .owl-controls .owl-page span{
+	background:red !important
+}
+
+/*ESCRITORIOS*/
+
+.destak-escritorio{
+	background:#f4f4f2 url(../img/gr/back-escritorio.jpg)no-repeat center top ;
+	display: inline-block;
+	width: 1000px;
+	padding-bottom: 50px;
+}
+
+.destak-escritorio img{
+	padding: 268px 0 0 130px;
+	float: left;
+}
+.box-p-destak{
+	float: right;
+    padding: 350px 60px 0 0;
+    width: 430px;
+}
+.box-p-destak h2{
+	font-size: 35px;
+	font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+	text-transform: uppercase;
+	line-height: 36px;
+	margin-bottom: 20px;
+	line-height: 120%;
+	font-style: italic;
+}
+.box-itens-escritorio img {
+	margin: auto;
+	display: block;
+
+}
+.box-p-destak h2 span , .box-itens-escritorio h2 span, .box-itens-escritorio p span{
+	color: #d60031;
+}
+.box-p-destak p , .box-itens-escritorio p{
+	font-family: 'Avenir LT Std 55 Roman';
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.box-itens-escritorio{
+	width: 100%;
+	padding: 50px 0px;
+	margin: 0 auto;
+	display: inline-block;
+}
+.box-itens-escritorio h2{
+	font-size: 35px;
+	font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+.box-itens-escritorio h4{
+	font-family: 'Avenir Next LT Pro Demi';
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 20px 0 60px 0;
+	line-height: 18px;
+}
+.box-itens-escritorio section#segmentos ul li p {
+	color: #777;
+	font-size: .876rem;
+	line-height: 1.28rem;
+}
+.box-itens-escritorio section#segmentos ul li h1,
+.box-itens-escritorio section#segmentos ul li h1 a:link,
+.box-itens-escritorio section#segmentos ul li h1 a:visited,
+.box-itens-escritorio section#segmentos ul li h1 a:active {
+	color: #1a1a1a;
+	font-size: .976rem;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.box-itens-escritorio section#segmentos ul li p a,
+.box-itens-escritorio section#segmentos ul li p a:link,
+.box-itens-escritorio section#segmentos ul li p a:visited,
+.box-itens-escritorio section#segmentos ul li p a:hover,
+.box-itens-escritorio section#segmentos ul li p a:active,
+.box-itens-escritorio section#segmentos ul li h1 a:hover{
+	color: #d60031;
+}
+.itens-escritorio{
+	position: relative;
+
+}
+.itens-escritorio ul li{
+	float: left;
+	width: 95px;
+}
+
+.itens-escritorio li a{
+    text-align: center;
+    color: #000000;
+    font-family: 'Avenir Next LT Pro Demi' !important;
+    display: block;
+}
+.itens-escritorio li a span{
+	display: block;
+	margin-bottom: 20px;
+	height: 63px;
+}
+.itens-escritorio li a.icon-real span{
+	background: url(../img/ui/ico-real.jpg)no-repeat center top;
+}
+
+.itens-escritorio li a.icon-calc span{
+	background: url(../img/ui/ico-calc.jpg)no-repeat center top;
+}
+.itens-escritorio li a.icon-medalha span{
+	background: url(../img/ui/ico-medalha.jpg)no-repeat center top;
+}
+.itens-escritorio li a.icon-cracha span{
+	background: url(../img/ui/ico-cracha.jpg)no-repeat center top;
+}
+.itens-escritorio li a.icon-maleta span{
+	background: url(../img/ui/ico-maleta.jpg)no-repeat center top;
+}
+.itens-escritorio li a.icon-bandeid span{
+	background: url(../img/ui/ico-bandeid.jpg)no-repeat center top;
+}
+.itens-escritorio li a.icon-apito span{
+	background: url(../img/ui/ico-apito.jpg)no-repeat center top;
+}
+.itens-escritorio li a.icon-megafone span{
+	background: url(../img/ui/ico-megafone.jpg)no-repeat center top;
+}
+.itens-escritorio li a.icon-palacio span{
+	background: url(../img/ui/ico-palacio.jpg)no-repeat center top;
+}
+.itens-escritorio li a:hover , .itens-escritorio li a:hover span{
+    color: #d60031;
+    background-position: bottom;
+    text-decoration: none;
+}
+
+.info-itens{
+	background: url(../img/ui/seta-baixo.png)no-repeat center bottom;
+	padding-bottom: 8px;
+	width: 240px;
+	position: absolute;
+}
+.info-itens p{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#d60031', endColorstr = '#d60031');
+	/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#d60031', endColorstr = '#d60031')";
+	/*Element must have a height (not auto)*/
+	/*All filters must be placed together*/
+	background-image: -moz-linear-gradient(top, #d60031, #d60031);
+	background-image: -ms-linear-gradient(top, #d60031, #d60031);
+	background-image: -o-linear-gradient(top, #d60031, #d60031);
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#d60031), to(#d60031));
+	background-image: -webkit-linear-gradient(top, #d60031, #d60031);
+	background-image: linear-gradient(top, #d60031, #d60031);
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	/*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+	/*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+	color: #ffffff;
+    font-weight: bold;
+    padding: 20px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+    font-size: 12px;
+}
+
+.real{
+    left: 0;
+    background-position: 40px bottom;
+    top: -173px;
+}
+.calc{
+	left: 25px;
+	top: -155px;
+}
+.medalha{
+	left: 118px;
+	top: -101px;
+}
+.cracha{
+	left: 215px;
+	top: -191px;
+}
+.maleta{
+	left: 308px;
+	top: -172px;
+}
+.bandeid{
+	left: 403px;
+	top: -154px;
+}
+.apito{
+	left: 500px;
+	top: -155px;
+}
+.megafone{
+	left: 595px;
+	top: -119px;
+}
+.palacio{
+	background-position: 160px bottom;
+	right: 3px;
+	top: -137px;
+}
+
+
+/*ADVOGADOS*/
+
+.og-expander-inner .og-details h3{
+	font-size: 36px;
+	font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+}
+.og-expander-inner .og-details p{
+	font-family: 'Avenir LT Std 55 Roman';
+	font-size: 12px;
+	color: #111111
+}
+#og-grid{
+	text-align: center;
+}
+#og-grid  li.adv{
+	display: inline-block;
+	text-align: center;
+	margin:0 23px 15px 0;
+	position: relative;
+}
+#og-grid  li.adv.none{
+	margin-right: 0;
+}
+#og-grid  li.adv img{
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1); /* Webkit Nightlies & Google Chrome Canary */
+	/* css transitions */
+	-webkit-transition: all .4s ease;  /* Safari 3.2+, Chrome */
+	-moz-transition: all .4s ease;  /* Firefox 4-15 */
+	-o-transition: all .4s ease;  /* Opera 10.5–12.00 */
+	transition: all .4s ease;
+}
+#og-grid  li.adv a:hover img{
+	filter: none; /* Applies to FF + IE */
+	-webkit-filter: grayscale(0);
+	/* css transitions */
+	-webkit-transition: all .3s ease;  /* Safari 3.2+, Chrome */
+	-moz-transition: all .3s ease;  /* Firefox 4-15 */
+	-o-transition: all .3s ease;  /* Opera 10.5–12.00 */
+	transition: all .3s ease;  /* Firefox 16+, Opera 12.50+ */
+}
+#og-grid  li.adv a{
+	padding: 17px;
+	border: 3px solid #cfd6d7;
+	display: block;
+}
+#og-grid  li.adv p{
+	display: none;
+	font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+	top: 20px;
+	left: 20px;
+	width: 160px;
+	height: 76px;
+	padding-top: 55px;
+	color: #ffffff;
+	font-size: 20px;
+	text-transform: uppercase;
+	position: absolute;
+	z-index: 99;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#d60031', endColorstr = '#d60031');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#d60031', endColorstr = '#d60031')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #d60031, #d60031);
+background-image: -ms-linear-gradient(top, #d60031, #d60031);
+background-image: -o-linear-gradient(top, #d60031, #d60031);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#d60031), to(#d60031));
+background-image: -webkit-linear-gradient(top, #d60031, #d60031);
+background-image: linear-gradient(top, #d60031, #d60031);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+opacity: 0.9;
+-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 90);
+/*-ms-filter must come before filter*/
+filter: alpha(opacity = 90);
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*All filters must be placed together*/
+
+}
+
+
+#campos_interesse  h2{
+	padding-top:50px;
+}
+#og-grid  li.adv .ativo p{
+	display: block;
+}
+
+#og-grid  li.destaque a{
+	border: 3px solid #d60031;
+}
+#og-grid  li.descricao{
+	display: none;
+	position: relative;
+	width: 860px;
+	padding: 20px 70px 0 70px;
+	height: 349px;
+	background-color: #f4f4f2;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+#og-grid  li.descricao.desc1{
+	height: 355px;
+}
+#og-grid  li.descricao .fechar{
+	background: url(../img/bt/fechar.png)no-repeat;
+	width: 34px;
+	height: 33px;
+	overflow: hidden;
+	text-indent: -999em;
+	position: absolute;
+	right: 20px;
+	top: 25px;
+}
+#og-grid  li.descricao .box-img{
+	float: left;
+	margin-right: 38px;
+}
+#og-grid  li.descricao.desc1 .box-img{
+	position: relative;
+	left: 10px;
+	bottom: 0;
+}
+#og-grid  li.descricao.desc1 .text{
+	float: right;
+}
+#og-grid  li.descricao .text{
+	width: 490px;
+	float: left;
+	margin-top: 32px;
+	text-align: left;
+}
+#og-grid  li.descricao h2{
+	font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+	font-size: 36px;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+#og-grid  li.descricao a{
+	width: 15px;
+	height: 13px;
+	overflow: hidden;
+	text-indent: -999em;
+	display: block;
+}
+#og-grid  li.descricao .redes{
+	width: 100%;
+	height: 13px;
+	margin-bottom: 25px;
+}
+#og-grid  li.descricao .redes li{
+	float: left;
+	margin-right: 15px;
+}
+#og-grid  li.descricao .bt-email{
+	background: url(../img/ui/icon-email.png)no-repeat;
+}
+#og-grid  li.descricao .bt-wp{
+	background: url(../img/ui/icon-wp.png)no-repeat;
+}
+#og-grid  li.descricao .bt-twitter{
+	background: url(../img/ui/icon-twitter.png)no-repeat;
+}
+#og-grid  li.descricao .bt-facebook{
+	background: url(../img/ui/icon-face.png)no-repeat;
+}
+#og-grid  li.descricao .bt-google{
+	background: url(../img/ui/icon-g%2b.png)no-repeat;
+}
+#og-grid  li.descricao .text p{
+	line-height: 140%;
+}
+
+/*Imprensa*/
+
+.back-branco .imprensa{
+
+	margin: 60px 2% 240px;
+	float: left;
+}
+
+.back-branco .imprensa h2{
+	font-size: 36px;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+	font-style: italic;
+}
+.back-branco .imprensa h2 strong{
+	color: #d60031;
+}
+.back-branco .imprensa p span{
+	margin-bottom: 25px;
+	display: block;
+	font-family: 'Avenir LT Std 55 Roman';
+}
+.back-branco .imprensa ul li{
+	margin-bottom: 5px;
+}
+.back-branco .imprensa ul li p{
+	font-size: 12px;
+	text-transform:uppercase;
+}
+.back-branco .imprensa ul li p strong{
+	color: #d60031;
+}
+.back-branco .imprensa ul li p a{
+	color: #111111;
+}
+
+/*FOTTER*/
+
+footer{
+	clear: both;
+	background-color: #d60031;
+	padding: 20px 40px 20px 20px;
+
+	margin-top: 90px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: #ffffff;
+	overflow:hidden;
+}
+footer .redes{
+	width: 37%;
+	float: left;
+	font-size: 12px;
+	padding-top:30px;
+	padding-top:20px;
+}
+footer .redes p{
+	line-height: 130%;
+	margin-bottom: 10px;
+}
+footer .redes a{
+	width: 35px;
+	height: 34px;
+	text-indent: -999em;
+	overflow: hidden;
+	float: left;
+}
+footer .redes .bt-twitter{
+	background: url(../img/ui/footer-twiiter.png) no-repeat;
+	margin-right: 5px;
+}
+footer .redes .bt-facebook{
+	background: url(../img/ui/footer-facebook.png) no-repeat;
+}
+footer .redes span{
+	display: block;
+}
+footer .onde-estamos{
+	width: 63%;
+	float: left;
+	padding-top:30px;
+	padding-bottom:20px;
+}
+footer .onde-estamos h2{
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+footer .onde-estamos li{
+	background: url(../img/ui/bullet-footer.png) no-repeat left top;
+	padding-left: 18px;
+	float: left;
+	font-size: 12px;
+	width: auto;
+	margin-right: 34px;
+	margin-top:20px
+}
+footer .onde-estamos li:last-child{
+	margin-right: 0;
+}
+footer .onde-estamos p{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-family: 'Avenir Next LT Pro Demi';
+}
+footer .onde-estamos a{
+	color: #ffffff;
+	font-style: 12px;
+	font-style: italic;
+}
+
+
+/**===================**/
+.box-itens-escritorio p {
+	margin-bottom: 1.25rem;
+}
+.box-itens-escritorio h2 {
+	font-style: normal;
+	text-align: center;
+	margin-bottom: 1.6rem;
+	font-family: 'Avenir Next LT Pro Ultra Light Condensed'
+}
+.box-itens-campos {
+	padding-left: 10px;
+	padding-right: 10px;
+	width:100%
+}
+.box-p-destak p, .box-itens-escritorio p,
+.box-p-destak p, .box-itens-escritorio ul li,
+.box-itens-campos section p {
+	font-size: 1.075rem;
+	line-height: 1.85rem;
+	color: #555;
+}
+
+.box-itens-campos .campos_interesse_menu {
+	float: left;
+}
+.box-itens-campos .campos_interesse_menu ul li {
+	float: none;
+	min-height: 24px;
+	max-height: 48px;
+	margin: 0px;
+	padding: 1rem;
+	border-bottom: 1px dashed #CCC;
+	background: #FBFBFB;
+}
+.box-itens-campos .campos_interesse_menu ul li img {
+	width: 34px;
+	height: 34px;
+}
+.box-itens-campos .campos_interesse_menu ul li.active {
+	box-shadow: -3px 4px 10px -4px #AAA;
+	position: relative;
+	z-index: 411;
+	background: white;
+	border-bottom: 0;
+}
+.box-itens-campos .campos_interesse_exemplos {
+	float: left;
+	width:87%;
+	padding: 2%;
+	box-shadow: -3px 4px 10px -4px #AAA;
+}
+.box-itens-campos section#exemplo_principal ul li {
+	min-height: 50px;
+	margin: 5px;
+}
+.box-itens-campos section#exemplo_principal ul li img{
+	width: 24px;
+	opacity: .2;
+	cursor: pointer;
+	background: white;
+	padding: 4px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+.box-itens-campos section#exemplo_principal ul li img:hover{
+	opacity: 1;
+}
+.box-itens-campos section#exemplo_principal span,
+.box-itens-campos section#exemplo_principal em,
+.box-itens-escritorio .img_bg span {
+	color: rgb(205, 118, 124);
+	font-style: normal;
+}
+
+.box-itens-escritorio ul li {
+	float: left;
+	width: 45%;
+	margin: 20px 2%;
+	color: #888;
+
+}
+.box-itens-escritorio ul:after {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+.box-itens-escritorio section {
+	padding: 4rem;
+	text-align: center;
+	background-size:cover ;
+}
+.box-itens-escritorio section:nth-child(odd) {
+
+}
+.box-itens-escritorio section:nth-child(even) {
+		background: #F6F6F6;
+}
+
+.box-itens-escritorio section:nth-child(1) {
+	padding-top: 0px;
+}
+
+.box-itens-escritorio section#exclusividade ul li img {
+	width: 50px;
+}
+
+.box-itens-campos section {
+	width:90%;
+	margin: 0 auto;
+	padding:0px;
+}
+.box-itens-campos h2 {
+	margin: 1rem;
+	margin-top: 30px;
+}
+.box-itens-campos ul li {
+	width: auto;
+	margin: .875rem;
+	float: right;
+}
+
+.box-itens-campos div.calltoaction {
+	color: #AAA;
+	padding: 3px 10px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border: 1px solid gray;
+	cursor: pointer;
+	background: rgba(20,20,20,.6);
+	line-height: 150%;
+}
+.box-itens-campos div.calltoaction:hover {
+	background: rgb(128, 34, 41);
+}
+
+
+.box-itens-escritorio section ul.exemplos {
+	margin-top: 0px;
+}
+.box-itens-escritorio section ul.exemplos:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.box-itens-escritorio section ul.exemplos li {
+	width: 47%;
+	padding:90px 5px 15px;
+	text-align: left;
+	float:left;
+	margin: auto;
+	padding-top: ;
+	min-height: 200px;
+
+}
+
+.box-itens-escritorio section ul.exemplos li:nth-child(2n) {
+	text-align: right;
+	float:right;
+	border-left: 1px solid #CCC;
+	padding-left: 2%;
+}
+
+.box-itens-escritorio section ul.exemplos li .wrapper .link,
+.box-itens-escritorio section ul.exemplos li .wrapper .link a,
+.box-itens-escritorio section ul.exemplos li .wrapper .link a:link,
+.box-itens-escritorio section ul.exemplos li .wrapper .link a:visited{
+	font-size: .875rem;
+	color: #777;
+	text-decoration: none;
+}
+.box-itens-escritorio section ul.exemplos li .wrapper .link a:hover,
+.box-itens-escritorio section ul.exemplos li .wrapper .link a:active {
+	color: white;
+	cursor: pointer;
+}
+.box-itens-escritorio section ul.exemplos li .wrapper .link {
+	border: #DADADA 1px solid;
+	width: 200px;
+	text-align: center;
+}
+.box-itens-escritorio section ul.exemplos li .wrapper .link:hover,
+.box-itens-escritorio section ul.exemplos li .wrapper .link:hover a,
+.box-itens-escritorio section ul.exemplos li .wrapper .link:hover a:link{
+	background: #d60031;
+	color: white;
+	cursor: pointer;
+}
+.box-itens-escritorio section ul.exemplos li:nth-child(2n) .wrapper .link{
+	float:right;
+}
+.box-itens-escritorio section ul.exemplos li:nth-child(2n) .wrapper .link:after{
+	content: " ";
+	display: block;
+	clear: both;
+
+}
+
+.box-itens-escritorio section h3{
+	font-weight: bolder;
+	font-size: 1.278rem;
+	line-height: 1.91rem;
+	margin-bottom: 1.3rempx;
+	text-transform: uppercase;
+	color: #444;
+}
+.box-itens-escritorio section p em {
+	font-style: normal;
+	color: #d60031;
+}
+
+.box-itens-escritorio ul.campos_interesse_listagem li {
+	float: left;
+	width: auto;
+	min-height: 50px;
+	width: 29%;
+}
+.box-itens-escritorio ul.campos_interesse_listagem li img{
+	width: 48px;
+}
+.box-itens-escritorio ul.campos_interesse_listagem li h1,
+.box-itens-escritorio ul.campos_interesse_listagem li p,
+.box-itens-escritorio section#nossos_valores ul li p {
+	font-size: .817rem;
+	line-height: 1.5rem;
+}
+
+.box-itens-escritorio ul.campos_interesse_listagem li h1 {
+	text-transform: uppercase;
+}
+
+.box-itens-escritorio ul.campos_interesse_listagem li p a,
+.box-itens-escritorio ul.campos_interesse_listagem li p a:link,
+.box-itens-escritorio ul.campos_interesse_listagem li p a:visited,
+.box-itens-escritorio ul.campos_interesse_listagem li p a:hover,
+.box-itens-escritorio ul.campos_interesse_listagem li p a:active {
+	color: #d60031;
+}
+
+.box-itens-escritorio section#nossos_valores ul li img{
+	width: 64px;
+}
+
+.box-itens-escritorio section#fotos_escritorios div{
+	font-style: italic;
+	font-size: .77rem;
+	font-family: arial;
+	margin-top: 5px;
+}
+.box-itens-escritorio section#segmentos_relacionados {
+	margin-top: 15px;
+	padding-top: 50px
+}
+.box-itens-escritorio section#segmentos_relacionados ul li{
+	float: left;
+	font-size: .778rem;
+	min-height: 40px;
+	width: 31%;
+	margin: 1%;
+	cursor: pointer;
+}
+.box-itens-escritorio section#segmentos_relacionados ul li a,
+.box-itens-escritorio section#segmentos_relacionados ul li a:link,
+.box-itens-escritorio section#segmentos_relacionados ul li a:visited,
+.box-itens-escritorio section#segmentos_relacionados ul li a:active,
+.box-itens-escritorio section#segmentos_relacionados ul li a h1{
+	color:#888;
+	text-decoration: none;
+	line-height: 150%;
+	text-transform: uppercase;
+}
+
+.box-itens-escritorio section#segmentos_relacionados ul li:hover,
+.box-itens-escritorio section#segmentos_relacionados ul li:hover a,
+.box-itens-escritorio section#segmentos_relacionados ul li:hover a:link,
+.box-itens-escritorio section#segmentos_relacionados ul li:hover a:visited,
+.box-itens-escritorio section#segmentos_relacionados ul li:hover a:hover,
+.box-itens-escritorio section#segmentos_relacionados ul li:hover a:active,
+.box-itens-escritorio section#segmentos_relacionados ul a:hover,
+.box-itens-escritorio section#segmentos_relacionados ul a:hover h1{
+	color:#d60031;
+}
+.box-itens-escritorio section#segmentos_relacionados ul li img{
+	width: 36px;
+	margin-bottom: 10px;
+}
+
+.box-itens-escritorio section#segmentos_relacionados ul#listagem_segmentos li{
+	width: 20%;
+}
+
+
+.box-itens-escritorio .lista_lado_lado li {
+	width: 22%;
+	min-height: 30px;
+	margin: .8%;
+	float: left;
+	padding-bottom: 5px;
+	background: #FAFAFA;
+	border-bottom: 1px solid #F5F5F5;
+}
+.box-itens-escritorio .lista_lado_lado li:hover {
+	cursor: pointer;
+}
+.box-itens-escritorio .lista_lado_lado li:hover div.link {
+	color:#d60031;
+}
+
+.box-itens-escritorio .lista_lado_lado li h3 {
+	text-transform: uppercase;
+	font-size: 0.758rem;
+	color:#444;
+}
+.box-itens-escritorio .lista_lado_lado li span {
+
+}
+.box-itens-escritorio .lista_lado_lado div.link {
+	font-size: .607rem;
+	line-height: .7rem;
+	color: #CCC;
+}
+
+.box-itens-escritorio .lista_lado_lado_50 li {
+	width: 45.7%;
+}
+
+
+.box-itens-escritorio section#tipos_clientes {
+	padding: 0px;
+}
+.box-itens-escritorio section#tipos_clientes ul.segmentos_menu {
+	border-bottom: 1px solid black;
+	width: 100%;
+	margin: 0;
+}
+.box-itens-escritorio section#tipos_clientes ul.segmentos_menu li {
+	width: auto;
+	min-height: inherit;
+	height: auto;
+	padding: 1.0rem 0.0rem;
+	text-align: center;
+
+	margin-bottom: -1px;
+}
+.box-itens-escritorio section#tipos_clientes ul.segmentos_menu li img{
+	width: 34px;
+	height: 34px;
+}
+.box-itens-escritorio section#tipos_clientes ul.segmentos_menu li.active {
+	opacity: 1;
+
+	border-bottom: 1px solid white;
+}
+
+
+/**servidor_ativo_2**/
+.box-itens-escritorio ul.campos_interesse_listagem_2 li {
+	width: 60px;
+	cursor: pointer;
+}
+.box-itens-escritorio ul.campos_interesse_listagem_2 li p{
+	display: none;
+}
+.box-itens-escritorio ul.campos_interesse_listagem_2 li h1,
+.box-itens-escritorio ul.campos_interesse_listagem_2 li a,
+.box-itens-escritorio ul.campos_interesse_listagem_2 li a:link,
+.box-itens-escritorio ul.campos_interesse_listagem_2 li a:visited,
+.box-itens-escritorio ul.campos_interesse_listagem_2 li a:active{
+	font-size: 0.6rem;
+	line-height: .9rem;
+	margin-top: 10px;
+	color: #888;
+	text-decoration: none;
+}
+.box-itens-escritorio ul.campos_interesse_listagem_2 li:hover h1,
+.box-itens-escritorio ul.campos_interesse_listagem_2 li:hover a,
+.box-itens-escritorio ul.campos_interesse_listagem_2 li:hover a:link,
+.box-itens-escritorio ul.campos_interesse_listagem_2 li a:hover{
+color:#d60031;
+text-decoration: none;
+}
+.m-menu{
+	display:none
+}
+/**servidor_ativo_3**/
+.box-itens-escritorio section#tipos_clientes p {
+	text-align: left;
+}
+
+.box-itens-escritorio section#tipos_clientes ul.tipos_clientes_3_menu li {
+	width: auto;
+	border-right: none;
+	min-height: inherit;
+	height: auto;
+	padding: 1.0rem 0.0rem;
+	text-align: center;
+
+	margin-right: -1px;
+	float: none;
+	clear: both;
+	margin: 0 0px 0 0;
+	border-bottom: 1px dashed #CCC;
+	background: #FBFBFB;
+}
+.box-itens-escritorio section#tipos_clientes ul.tipos_clientes_3_menu li:last-child {
+
+}
+.box-itens-escritorio section#tipos_clientes ul.tipos_clientes_3_menu {
+	border-bottom: 0px;
+	width: 7%;
+	margin: 0;
+	float: left;
+}
+
+.box-itens-escritorio section#tipos_clientes ul.tipos_clientes_3_menu li.active {
+	opacity: 1;
+	border-right: 1px solid white;
+	background: white;
+	position: relative;
+	z-index: 3;
+	box-shadow: -3px 2px 7px -2px #AAA;
+}
+
+.box-itens-escritorio section#tipos_clientes ul.tipos_clientes_3_menu li img.image_on {
+		display: none;
+}
+.box-itens-escritorio section#tipos_clientes ul.tipos_clientes_3_menu li img.image_off {
+		display: block;
+}
+.box-itens-escritorio section#tipos_clientes ul.segmentos_menu li:hover img.image_on,
+.box-itens-escritorio section#tipos_clientes ul.tipos_clientes_3_menu li.active img.image_on {
+		display: block;
+}
+.box-itens-escritorio section#tipos_clientes ul.segmentos_menu li:hover img.image_off,
+.box-itens-escritorio section#tipos_clientes ul.tipos_clientes_3_menu li.active img.image_off {
+		display: none;
+}
+.box-itens-escritorio section#tipos_clientes div.tipos_clientes_3_texto {
+	padding-top: 40px;
+	min-height: 300px;
+	float: left;
+	box-shadow: -3px 2px 7px -2px #AAA;
+	margin-left: -1px;
+	z-index: 1;
+	position: relative;
+	padding: 30px;
+	width: 80%;
+}
+
+.box-itens-escritorio section#exemplosCampoInteresse ul li:first-child {
+	padding-top: 0px;
+}
+
+
+input[type="submit"].button-busy {
+    background: #444;
+    cursor: default;
+}
+input[type="submit"].button-success {
+    background: green;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+input[type="submit"].button-error {
+    background: #F7C5C5;
+    color: red;
+}
+
+#mensagem_erro p{
+	margin: 7px;
+	font-size: 1.2rem;
+}
+
+#mensagem_erro strong {
+	color: red;
+}
+#contato_form {
+	display: none;
+	position: absolute;
+	top: 575px;
+	left: 0;
+	width: 100%;
+	background: rgb(236, 236, 236);
+	text-align: center;
+	padding: 20px;
+	box-shadow: 1px 0px 10px 0px;
+}
+#contato_form input[type="text"],
+#contato_form select{
+	font-size: 1.4rem;
+	margin-bottom: 0rem;
+	padding: 10px;
+	width: 50%;
+}
+.erro{
+	text-align:center
+}
+.erro h1{
+	color:#d60031; font-size:23px; font-weight:700; padding:10px 0px; overflow:hidden;
+	display:inline-block;
+	border-bottom:3px solid #d60031;
+}
+.erro p{
+	padding:50px 0px;
+	font-size:16px
+}
+.erro a{
+	display: inline-block;
+	background:#d60031;
+	color:#ffffff;
+	padding:10px 20px;
+	width:100px;
+	margin: 10px 0px;
+	text-transform:Uppercase;
+
+
+}
+.block{
+	display:block
+}
+.advo h1, .dis, .mail, .tele, .notica, .bc, .cen{
+	display:none
+}
+.back-branco ul#og-grid:nth-child(3){
+		display:none
+	}
+	.back-branco ul#og-grid:nth-child(4){
+		display:block
+	}
+
+@media screen and (min-width: 700px){
+	body{ width:1300px; margin: 0 auto; background:#fafbfa;}
+
+}
+
+@media screen and (max-width: 610px){
+	header .nav-blog{
+		display:none;
+	}
+	.customselect{
+	width: 101%;
+	}
+	.box-itens-escritorio ul.campos_interesse_listagem li{
+		width:45%
+	}
+	.box-itens-escritorio ul.campos_interesse_listagem li:last-child{
+		width:90%
+	}
+}
+
+@media screen and (max-width: 619px){
+
+	.notica-m p{
+		display:none;
+	}
+	.box-itens-escritorio section#tipos_clientes div.tipos_clientes_3_texto {
+
+	width: 90%;
+}
+.box-itens-escritorio section#tipos_clientes p{
+	text-align:center
+}
+	.notica-m .content-blog .title a{
+		font-size:22px
+	}
+
+	.advo h1{
+		color: #d60031;
+    font-size: 23px;
+    font-weight: 700;
+    padding: 30px 0px 10px 0px;
+    overflow: hidden;
+    display: inline-block;
+    border-bottom: 3px solid #d60031;
+	}
+	.box-itens-escritorio section{
+		padding:20px 0 !important;
+	}
+	.box-itens-campos section{
+		padding:20px 0 !important;
+		width:100%
+	}
+	.box-itens-escritorio section#segmentos_relacionados ul#listagem_segmentos li{
+		width:16%
+	}
+	.back-branco ul#og-grid:nth-child(3){
+		display:block
+	}
+	.back-branco ul#og-grid:nth-child(4){
+		display:none
+	}
+	#og-grid li.adv p{
+		width: 181px;
+		height: 94px;
+	}
+	#og-grid li.descricao.desc1{
+		height:auto;
+	}
+	#og-grid li.descricao{
+		width:100%;
+		height:auto;
+		padding:20px;
+		float: left;
+	}
+	#og-grid li.descricao .text{
+		width:100%;
+	}
+	#og-grid li.descricao .box-img, #og-grid li.descricao.desc1 .box-img{
+		display:none
+	}
+	#og-grid li.adv:nth-child(1), #og-grid li.adv:nth-child(5), #og-grid li.adv:nth-child(9), #og-grid li.adv:nth-child(3), #og-grid li.adv:nth-child(17), #og-grid li.adv:nth-child(21){
+		margin-left:2%;
+	}
+	#og-grid li.adv{
+    text-align: center;
+    /* margin: 0 23px 15px 0; */
+    position: relative;
+    width: 47%;
+    float: left;
+    margin:0 2% 15px 0;
+    border: none;
+
+	}
+	#og-grid{
+		width: 470px;
+		margin: 0 auto;
+	}
+	#og-grid  li.adv img{
+		width: 100%;
+		height: 148px;
+
+	}
+	.ron{
+		display:inline-block !important;
+		color:#ffffff !important;
+	}
+	.box-itens-escritorio section ul.exemplos li{
+		border-bottom:1px solid #cccccc;
+	}
+	.box-itens-escritorio section ul.exemplos li:nth-child(2n){
+		border-bottom:1px solid #cccccc;
+	}
+	.box-p-destak h2 span, .box-itens-escritorio h2 span, .box-itens-escritorio p span{
+		display:block
+	}
+	.box-p-destak h2, .box-itens-escritorio h2{
+
+	}
+	.box-itens-escritorio section#segmentos_relacionados ul li:last-child{
+		width:95%;
+	}
+
+	.box-itens-escritorio section#segmentos_relacionados ul li{
+		width:43%;
+		margin: 3%
+	}
+
+	.owl-item li.item2{
+		float:none;
+	}
+	.box-itens-campos .campos_interesse_exemplos {
+		float: none;
+		width:90%;
+		padding:0px;
+		margin:0 auto;
+		box-shadow: none;
+
+	}
+
+	.dis{
+		display:block;
+		padding: 15px 0px 5px
+	}
+	.box-itens-campos .campos_interesse_menu{
+		display:none !important
+	}
+	.box-itens-campos{
+		padding:0px
+	}
+	.box-itens-escritorio ul li{
+		min-height:auto;
+	}
+	.box-itens-campos .campos_interesse_menu ul li{
+		float:left;
+	}
+
+
+	.info-blog{
+	width: 100%;
+	float: left;
+}
+	aside{
+		display:none;
+	}
+	.sub-menu li.item2:before, .sub-menu li.item3:before, .sub-menu li.item4:before{
+	content:'';
+	height:0;
+	width:0;
+
+	border-right:10px solid transparent;
+	border-left:10px solid transparent;
+	position:absolute;
+	right:50%;
+	top:0;
+	z-index:9999
+}
+.sub-menu li.item2:before{
+	border-top:10px solid #E9887F;
+}
+.sub-menu li.item3:before{
+	border-top:10px solid #E26662;
+}
+.sub-menu li.item4:before{
+	border-top:8px solid #DC4049;
+}
+.sub-menu li{
+
+	position:relative;
+}
+	footer .redes a{ margin-top: 33px;	}
+	footer .redes p{
+		    top: 44px;
+			line-height: 130%;
+			margin-bottom: 10px;
+			position: absolute;
+			left: 161px;
+			font-size: 14px;
+			}
+	footer .redes{ padding-left: 25px; padding-top:14px}
+
+	.back-branco{
+		text-align:center;
+	}
+	.box-itens-escritorio ul.campos_interesse_listagem li h1, .box-itens-escritorio section#segmentos ul li h1{
+		font-size:14px;
+		text-align:center;
+		display:inline-block;
+		font-weight:700;
+
+	}
+
+
+
+	.equipe{display:none;}
+	.box-noticia, .destaque-blog{display:none;}
+
+	.info-greve img{
+	height:auto;
+}
+	.notica {text-align:center; padding:50px 20px; overflow:hidden; display:block; text-transform: uppercase;}
+	.notica h2{ font-weight:700; color:#d60031; font-size:24px; border-bottom:3px solid #d60031; margin-bottom:20px; display:inline-block; padding-bottom:6px}
+	.notica p{font-size:15px; padding-bottom:35px; padding-top:10px}
+	.notica p a{ color:#000000; line-height:24px; }
+	.red p a{ color:white; line-height:24px; }
+	.notica i{color:#ccc;}
+	.notica .date{padding:10px 0px}
+	.notica .button{
+		display:block;
+		background: #d60031;
+		padding:15px 0px;
+		font-style:italic;
+		color:#ffffff;
+	}
+	.red{background:#d60031; color:#ffffff;}
+	.box-left, .box-right, .box-center{ display:none; }
+	.sub-menu h2{display:none}
+	.col-2{width:50%; overflow:hidden;float:left}
+	.bc{padding:50px 0px; color:#ef1c1c; font-size:18px; display:block}
+
+	.bc img{vertical-align:middle; padding-right:13px}
+	.info-escritorios ul li p:nth-child(3){color:#ef1c1c;}
+	.tele a, .mail a{
+		color:#ef1c1c;
+	}
+	.tele{
+		width:50%;
+
+		float:left;
+		font-size:17px;
+		display:block;
+		padding-bottom: 16px
+	}
+	.tele span{
+		margin-left:10px;
+
+	}
+	.tele img{
+		vertical-align: middle;
+		    padding-left: 74px;
+	}
+	.mail img{
+		vertical-align: middle;
+		    padding-left: 74px;
+	}
+	.tele p{margin-left: 115px;}
+
+	header{height:125px;}
+
+	.mail span{
+		margin-left:10px
+	}
+	.mail{
+		width:50%;
+
+		float:right;
+		font-size:17px;
+		display:block
+	}
+
+
+
+.m-menu{
+	display:block;
+	float:right;
+	position:relative;
+	margin-top:6px;
+
+}
+
+header nav ul li{
+	float:none;
+}
+header nav ul{
+	position:absolute;
+	width: 80%;
+    text-align: center;
+    top: 87px;
+    right: 10%;
+    overflow: hidden;
+    z-index: 999;
+    background-color: #ccc;
+	display:none;
+	padding: 20px 0px
+
+}
+header nav ul li:last-child{
+	margin-right:10px
+}
+header nav ul li a{
+	display:block;
+    width: 88%;
+    margin: 0 auto;
+}
+
+	#destaque aside {
+    width: 100%;
+	padding:0;
+	display:block;
+	margin-top:360px
+}
+#destaque{
+	position:relative;
+	overflow:hidden;
+}
+
+	#destaque section {
+    float: left;
+    width: 100%;
+    position: absolute;
+	top: 0px;
+}
+
+#destaque a img{
+	width:800px;
+	height:380px;
+	position:relative
+}
+.sub-menu {
+    clear: both;
+    height: 150px;
+    width: 100%;
+}
+
+	#destaque aside li{
+		width:49%;
+		float:left;
+		border-right:3px solid #b6002a;
+		padding:44px 0;
+	}
+	#destaque aside li:nth-child(2){
+		border-right:none;
+	}
+	#destaque aside li:nth-child(4){
+		border-right:none;
+	}
+	.sub-menu h2{
+		width:100%;
+	}
+	.sub-menu li{
+		width:100%;
+		height:auto;
+		padding: 25px 0;
+	}
+	.sub-menu li.item4{
+		width:100%;
+		background: #d60031 ;
+		height:auto;
+		padding: 25px 0;
+
+	}
+	.sub-menu li a{
+		width:80%;
+		font-weight:700
+	}
+	.sub-menu li.item1{
+	background: #e9887f  ;
+}
+.sub-menu li.item2{
+	background: #e26662
+
+}
+.sub-menu li.item3{
+	background: #dc4049 ;
+	height:auto;
+		padding: 25px 0;
+
+}
+
+.box-center{
+	width:100%;
+}
+.box-right{
+	width:100%;
+}
+.info-greve img{
+	width:100%;
+}
+.info-greve .box-noticia{
+	width:100%;
+}
+.box-left{
+	display:none;
+}
+footer .redes{
+	width:100%;
+}
+footer .onde-estamos{
+	display:none;
+}
+footer{
+	overflow: inherit;
+    height: 117px;
+	position:relative
+}
+.con{
+	padding:20px 10%;
+	overflow:hidden;
+
+}
+ a{ color:#111111}
+.cen{display:block}
+.cen h1{
+	color:#d60031; font-size:23px; font-weight:700; padding:20px 0px; overflow:hidden;
+	display:inline-block;
+	border-bottom:3px solid #d60031;
+}
+.full{
+	width:100%;
+	text-align:center;
+}
+
+.con h2{
+	font-size:18px;
+	font-weight:700;
+	padding:15px 0;
+}
+.con img{
+	margin-right:7px;
+	vertical-align:middle;
+}
+
+.con .se{
+	display:block;
+	padding:5px 0;
+}
+
+.info-escritorios ul li a {
+    background-color: #d60031;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 5px;
+    display: inline-block;
+    padding: 10px 31px;
+
+}
+.info-escritorios ul li a:before{
+	background-image:url('img/ui/map.png')
+}
+.info-escritorios ul li{
+	width:90%;
+	padding-left:30px
+}
+.box-itens-escritorio ul.campos_interesse_listagem_2 li{
+	width:40%
+}
+.box-itens-escritorio ul.campos_interesse_listagem_2 li:last-child{
+	width:100%;
+}
+.box-itens-escritorio ul.campos_interesse_listagem_2 li h1:hover{
+	text-decoration:underline;
+}
+.box-itens-escritorio ul.campos_interesse_listagem_2 li h1{
+	border:none;
+}
+#fotos_escritorios img{
+	width:85%
+}
+#og-grid li.destaque a{
+	border:3px solid #cfd6d7 !important
+}
+
+
+
+}
+@media screen and (max-width: 640px){
+
+	#campos_interesse .campos_interesse_listagem p{
+
+	}
+
+	.img-clientes ul li{
+	width:42%;
+	}
+	.img-clientes ul li img{
+		width:100%;
+	}
+	.box-itens-escritorio ul.campos_interesse_listagem li{
+		width:44%
+	}
+
+
+}
+@media screen and (max-width: 600px){
+	.box-itens-escritorio section{
+		padding:20px;
+	}
+	.box-itens-escritorio section#exemplo_principal {
+		background-position-x: 40%;
+	}
+	.box-itens-escritorio #segmentos li p a{
+	    background-color: #d60031;
+    padding: 10px 20px;
+    color: #fff !important;
+    margin-top: 25px;
+    /* overflow: hidden; */
+    display: inline-block;
+	}
+	.box-itens-escritorio #segmentos li{
+	  width:90%
+	}
+
+	.tipos_clientes_3_texto h2 {
+		text-align:center !important;
+		font-weight:700;
+	}
+	.box-itens-escritorio section#tipos_clientes div.tipos_clientes_3_texto{
+		box-shadow:none;
+	}
+	.box-itens-escritorio section#tipos_clientes p{
+		font-size:14px
+	}
+	.box-itens-escritorio section#tipos_clientes ul.tipos_clientes_3_menu{
+		width:100%;
+	}
+	.box-itens-escritorio section#tipos_clientes ul.tipos_clientes_3_menu li{
+		clear:inherit;
+		float:left;
+		width:24.9%
+	}
+
+	.box-itens-escritorio section ul.exemplos li .wrapper .link{
+		margin:0 auto
+	}
+	.box-itens-escritorio section ul.exemplos li:nth-child(2n){
+		width: 95%;
+		margin: auto;
+		text-align: center;
+		float:none;
+		border-left:none;
+	}
+	.box-itens-escritorio section ul.exemplos li:nth-child(2n) .wrapper .link{
+		float:none;
+
+
+	}
+	.box-itens-escritorio section ul.exemplos li {
+	width: 95%;
+	padding: 5px;
+	text-align: center;
+	float:none;
+	margin: auto;
+	padding-top: 90px;
+	min-height: 200px;
+}
+.box-itens-escritorio section#exclusividade ul li img {
+	filter: brightness(100);
+	-webkit-filter: brightness(100);
+	-moz-filter: brightness(100);
+}
+
+
+	#destaque aside {
+
+	margin-top:299px
+}
+#destaque a img{
+	width:634px;
+}
+
+#owl-demo .item img{
+	height: 300px;
+}
+#destaque p.text_holder{
+	padding-top:170px;
+}
+
+.img-clientes ul li{
+	width:42%;
+
+}
+.img-clientes ul li img{
+	width:100%;
+}
+#exclusividade{
+	background:#D60031;
+
+}
+#exclusividade li{
+	color: #fff !important
+}
+#exclusividade h2{
+
+		color:#ffffff
+	}
+	.box-itens-escritorio section#tipos_clientes ul.tipos_clientes_3_menu li.active{
+		box-shadow:none;
+		border-bottom:3px solid red
+	}
+
+}
+@media screen and (max-width: 640px){
+	h2.aspas {
+		margin: 30px 0 85px 0;
+	}
+	.owl-pagination{
+		padding-top:12px
+	}
+	.box-itens-escritorio {
+		padding-top: 10px;
+	}
+	.box-itens-escritorio h2{
+		font-size: 1.441rem;
+	}
+	.box-itens-escritorio ul.campos_interesse_listagem li h1{
+		font-size:12px
+	}
+	.campos_interesse_listagem li{
+		width:90% !important;
+	}
+
+	.box-itens-escritorio ul.campos_interesse_listagem li{
+		width:45% !important;
+		margin: 2%!important;
+		float:left !important ;
+
+	}
+		.box-itens-escritorio ul.campos_interesse_listagem li:last-child{
+			width:100% !important;
+			margin: 4% !important;
+
+			text-align:center
+		}
+
+	.box-p-destak p, .box-itens-escritorio p, .box-p-destak p, .box-itens-escritorio ul li, .box-itens-campos section p{
+		padding-top:10px;
+	}
+	.box-itens-escritorio section#segmentos_relacionados ul#listagem_segmentos li{
+		width:43% !important;
+	}
+	.destaque-advogados{
+		display:none;
+	}
+	#main-top .center, #main-bottom .center{
+		width:90%
+	}
+	.box-itens-escritorio ul li{
+		width:90%;
+		float:none;
+		margin:0 auto;
+	}
+	.box-itens-escritorio ul.campos_interesse_listagem li{
+		width:90%;
+		float:none;
+		margin:0 auto;
+	}
+	.form-contato ul li select, .form-contato input, .form-contato textarea{
+		font-size:14px
+	}
+	#destaque p.text_holder{
+		font-size:18px;
+		line-height:25px
+		}
+	header nav ul{
+	width: 90%;
+	right:5%;
+	}
+	header #nav{
+		padding: 0px 20px
+	}
+	.tele img{
+		vertical-align: middle;
+		    padding-left: 10px;
+			width: 26px;
+	}
+	.tele p{
+		margin-left:43px;
+
+	}
+	.mail, .tele{
+		font-size: 15px;
+	}
+	.mail img{
+		vertical-align: middle;
+		    padding-left: 10px;
+			width: 26px;
+	}
+#destaque a img{
+	width:480px;
+}
+.img-clientes ul li{
+	width:40%;
+	}
+}
+@media screen and (max-width: 540px){
+	#og-grid{
+		width: 100%;
+	}
+	#og-grid  li.adv img{
+
+	}
+	#og-grid li.adv p{
+		width:80%;
+		height: 66px;
+	}
+}
+@media screen and (max-width: 400px){
+	#og-grid li.adv p{
+		width: 76%;
+		height: 50px;;
+	}
+	#og-grid  li.adv img{
+		height: 100px;
+	}
+	.box-itens-escritorio ul.campos_interesse_listagem li h1{
+		font-size:9px
+	}
+	.form-contato input.enviar{
+	width: 113%;
+	}
+	.form-contato ul li select, .form-contato input, .form-contato textarea{
+		font-size:12px
+	}
+	.con h1{
+		font-size:16px
+	}
+	.bc{
+		font-size:12px
+	}
+
+	#destaque a img{
+		width:323px;
+		height:300px;
+	}
+
+	.tele{
+		font-size:12px
+
+	}
+	.mail{
+		font-size:12px
+	}
+	.img-clientes ul li{
+	width:80%;
+	float:none
+	}
+}

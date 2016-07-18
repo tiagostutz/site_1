@@ -1,0 +1,23 @@
+<div class="noticias">
+  <h3>Todas as notícias</h3>
+  <div cg-busy="noticiaLateralPromise"></div>
+<div class="content-blog" ng-repeat="noticia in todasNoticias">
+  <h1 id="noticia_title" class="title"><a href="/noticias/{{url(noticia)}}" target="_blank">{{ noticia.titulo }}</a></h1>
+  <span class="date">{{ noticia.datapublicacao }}</span>
+
+  <!--Botoes de compartilhamento-->
+  <div class="bt-compartilhamento">
+    <ul>
+      <li><iframe class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" frameborder="0" scrolling="no" allowtransparency="true" src="{{urltwitter(noticia)}}" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 107px; height: 20px;"></iframe></li>
+      <li><iframe class="" width="1000px" height="20px" frameborder="0" name="f1c6e02ff96f322" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" style="border: medium none; visibility: visible; width: 84px; height: 20px;" src="{{urlfacebook(noticia)}}" ></iframe></li>
+      <li><iframe width="100%" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" src="{{urlgoogle(noticia)}}" title="+1"></iframe></li>
+    </ul>
+  </div>
+
+  <div ng-bind-html="noticia.texto"></div>
+
+</div>
+</div>
+<div>
+   <a href="/todas_noticias/{{offset}}" ng-if="todasNoticias.length != 0">Mais notícias</a>
+</div>

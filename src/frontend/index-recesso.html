@@ -1,0 +1,560 @@
+<!DOCTYPE HTML>
+<html ng-app="homeApp" ng-controller="HomeController as homeController">
+    <head>
+    <meta charset=utf-8>
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cassel Ruzzarin Santos Rodrigues - Advogados</title>
+<meta name="title" content="Cassel Ruzzarin Santos Rodrigues - Advogados">
+<meta name="description" content="">
+<!-- Google will often use this as its description of your page/site. Make it good. -->
+<meta property="og:site_name" content="Cassel Ruzzarin Santos Rodrigues - Advogados" />
+<meta property="og:title" content="" />
+<meta property="og:url" content="" />
+<meta property="og:type" content="website" />
+<meta property="fb:admins" content="" />
+<!--<meta property="og:video" content="" />
+<meta property="og:video:type" content="" />-->
+<meta property="og:image" content="http://servidor.adv.br/img/apple-touch-icon.png" />
+<meta name="author" content=" ">
+
+<!-- Dublin Core Metadata : http://dublincore.org/ -->
+<meta name="DC.title" content="Cassel Ruzzarin Santos Rodrigues - Advogados">
+<meta name="DC.subject" content="">
+<meta name="DC.creator" content="Jonathas Holanda">
+<!--  Mobile Viewport Fix -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<!-- This is the traditional favicon. -->
+<link rel="shortcut icon" type="image/x-icon" href="http://servidor.adv.br/img/favicon.ico" />
+<!-- The is the icon for iOS's Web Clip. -->
+<link rel="apple-touch-icon" href="http://servidor.adv.br/img/apple-touch-icon.png">
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://servidor.adv.br/css/angular-busy.min.css" media="screen" />
+<script src="http://servidor.adv.br/js/angular-busy.min.js"></script>
+
+<!-- CSS: screen, mobile & print are all in the same file -->
+<link rel="stylesheet" type="text/css" href="http://servidor.adv.br/css/interface.css" media="screen" title="html5doctor.com Reset Stylesheet" />
+
+
+
+<script src="http://servidor.adv.br/index.html.angular.js"></script>
+
+<!-- this is the javascript allowing html5 to run in older browsers -->
+<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+<script src="http://servidor.adv.br/js/modernizr-1.7.min.js"></script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+
+  <!-- Copy Start -->
+
+  <script src="owl-carousel/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css" />
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css" />
+
+
+  <!-- Copy End -->
+
+
+
+</head>
+
+<body>
+    <div id="main-top">
+        <div class="center">
+            <header>
+                <div class="nav-blog">
+                    <h2>Defesa do Servidor Público: <span>Do Concurso à aposentadoria</span></h2>
+                    <ul>
+                        <li><a href="http://www.infogreve.com.br/">InfoGreve</a></li>
+                        <li><a href="http://www.blogservidorlegal.com.br/">Blog Servidor Legal</a></li>
+                        <li><a href="http://www.direitodosconcursos.com.br/">Blog Direito dos Concursos</a></li>
+                    </ul>
+                </div>
+                 <div id="nav">
+                    <h1><a href="http://servidor.adv.br/index.html">Cassel Ruzzarin Santos Rodrigues - Advogados</a></h1>
+                    <nav>
+
+
+          					<!-- Mobile menu Icon Start-->
+          						<a  href="#" class="m-menu" ><img src="img/ui/menu.png" alt="" /></a>
+          					<!-- Mobile menu Icon Start-->
+
+
+                        <ul>
+                            <li><a href="http://servidor.adv.br/escritorio.html">Escritório</a></li>
+                            <li><a href="http://servidor.adv.br/advogados.html">Advogados</a></li>
+                            <li><a href="http://servidor.adv.br/clientes.html">Clientes</a></li>
+                            <li><a href="http://servidor.adv.br/contato.html/ref/home">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+
+            			<!--Start telephone & contato mobile icon -->
+
+
+            			<div class="tele"><img src="http://servidor.adv.br/img/ui/tele.png" alt="" /> <span class="bl"><a href="http://servidor.adv.br/enderecos.html">TELEFONES <p>E ENDERÇOS</p></a> </span></div>
+            			<div class="mail"><img src="http://servidor.adv.br/img/ui/massage.png" alt="" /> <span><a href="http://servidor.adv.br/contato.html">CONTATO</a></span></div>
+
+
+            			<!-- End telephone & contato mobile icon -->
+
+            <div class="content">
+                <div id="destaque">
+                    <aside>
+                        <ul>
+                            <li><a href="http://servidor.adv.br/perfis/entidades-de-classe">Entidades de Classe</a></li>
+                            <li><a href="http://servidor.adv.br/perfis/candidatos-a-cargo-publico">Concursos Públicos</a></li>
+                            <li><a href="http://servidor.adv.br/perfis/servidores-ativos">Servidores Ativos</a></li>
+                            <li><a href="http://servidor.adv.br/perfis/servidores-inativos">Servidores Aposentados</a></li>
+                        </ul>
+                    </aside>
+                    <section>
+                		<div cg-busy="destaquesPromise"></div>
+
+
+          					<!-- Copy start Replace Before slider -->
+          					<!-- New Slider Start -->
+
+
+          					<div id="owl-demo" class="owl-carousel owl-theme">
+
+          						<div class="item">
+                        <a href="{{destaques[0].link}}">
+                            <img ng-src="{{destaques[0].imagem}}" alt="" width="670" height="360">
+                             <p class="text_holder" ng-bind="destaques[0].titulo">
+                            </p>
+                        </a>
+          						</div>
+          						<div class="item">
+                        <a href="{{destaques[1].link}}">
+                            <img ng-src="{{destaques[1].imagem}}" alt="" width="670" height="360">
+                             <p class="text_holder" ng-bind="destaques[1].titulo">
+                            </p>
+                        </a>
+          						</div>
+          						<div class="item">
+                        <a href="{{destaques[2].link}}">
+                            <img ng-src="{{destaques[2].imagem}}" alt="" width="670" height="360">
+                             <p class="text_holder" ng-bind="destaques[2].titulo">
+                            </p>
+                        </a>
+          						</div>
+
+
+          					</div>
+
+                          		<!-- New Slider End -->
+
+          						<!-- Copy End -->
+                    </section>
+                    <div class="sub-menu">
+                        <h2><span>O que você deseja?</span></h2>
+
+                        <!-- copy-start -->
+
+                        <div class="col-2 bc"><img src="img/ui/team.png" alt="" /><span><a href="http://servidor.adv.br/escritorio.html">ESCRITÓRIO</a></span></div>
+                        <div class="col-2 bc"><img src="img/ui/team2.png" alt="" /><span><a href="http://servidor.adv.br/advogados.html">ADVOGADOS</a></span></div>
+                        <!-- copy-End -->
+
+                        <ul>
+                            <li class="item1"><a href="http://portfolio.servidor.adv.br/#!/pessoas/">Conhecer Ações Individuais</a></li>
+                            <li class="item2"><a href="http://portfolio.servidor.adv.br/#!/assuntos/">Conhecer Ações Coletivas</a></li>
+                            <li class="item3"><a href="http://portfolio.servidor.adv.br/#!/entidades/">Entender as Ações da minha Entidade</a></li>
+                            <li class="item4"><a href="/contato.html">Reunir-me com um Advogado</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+        				<!-- Copy Start -->
+        				<!-- mobile-version -->
+
+
+
+
+        				<div class="notica">
+                  <div cg-busy="noticia1Promise"></div>
+        					<h2>NOTÍCIAS</h2>
+        					<p><a href="http://servidor.adv.br/noticias/{{url(noticia1)}}">{{ noticia1.titulo }}</a></p>
+        					<a href="http://servidor.adv.br/noticias"><i>Notícias</i></a>
+        					<div class="date">{{ noticia1.datapublicacao }}</div>
+        				</div>
+
+                <div class="notica red">
+        					<p><a href="http://servidor.adv.br/noticias/{{url(noticia2)}}">{{ noticia2.titulo }}</a></p>
+        					<a href="http://servidor.adv.br/noticias"><i>Notícias</i></a>
+        					<div class="date">{{ noticia2.datapublicacao }}</div>
+        				</div>
+
+        				<div class="notica">
+        					<p><a href="http://servidor.adv.br/na_midia/{{url(naMidia1)}}">{{ naMidia1.titulo }}</a></p>
+        					<a href="http://servidor.adv.br/na_midia"><i>Na Mídia</i></a>
+        					<div class="date">{{ naMidia1.datapublicacao }}</div>
+        				</div>
+
+
+
+
+        				<!-- mobile-version -->
+
+        				<!-- Copy End -->
+
+
+
+                <div class="info-greve">
+                    <a href="http://www.infogreve.com.br"><img src="http://servidor.adv.br/img/gr/infogreve.jpg" alt=""></a>
+                    <div class="box-noticia">
+                        <div cg-busy="noticia1Promise"></div>
+                        <h3><a href="">{{ noticia1.titulo }}</a></h3>
+                        <a href="http://servidor.adv.br/noticias.html" class="category">Notícias</a>
+                        <span class="date"></span>
+                    </div>
+                </div>
+
+                <div class="box-left">
+                    <img src="http://servidor.adv.br/img/gr/desvio-de-funcao.jpg" alt="" style="cursor: pointer" onclick="location.href='http://materiais.servidor.adv.br/cartilha-desvio-de-funcao'">
+                    <a href="http://materiais.servidor.adv.br/cartilha-desvio-de-funcao">Faça o Download Gratuito!</a>
+                </div>
+
+                <div class="box-center">
+                     <div class="box-noticia">
+                        <div cg-busy="noticia2Promise"></div>
+                        <h3><a href="http://servidor.adv.br/noticias/{{url(noticia2)}}">{{ noticia2.titulo }}</a></h3>
+                        <a href="http://servidor.adv.br/noticias.html" class="category">Notícias</a>
+                        <span class="date"></span>
+                    </div>
+                    <div class="tweets">
+                    </div>
+                </div>
+
+                <div class="box-right">
+                    <div class="box-noticia">
+                        <div cg-busy="naMidia1Promise"></div>
+                         <h3><a href="http://servidor.adv.br/na_midia/{{url(naMidia1)}}">{{ naMidia1.titulo }}</a></h3>
+                        <a href="http://servidor.adv.br/na_midia.html" class="category">Na Mídia</a>
+                        <span class="date">{{ naMidia1.datapublicacao }}</span>
+                    </div>
+                    <div class="facebook">
+                        <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fservidoradv%3Ffref%3Dts&amp;width=240&amp;height=201&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=458140120996938" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:240px; height:201px;" allowTransparency="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-bottom">
+        <div class="center">
+            <div class="content">
+                <div class="destaque-advogados">
+                    <ul>
+                        <li><a href="http://servidor.adv.br/advogados.html#CASSEL"><img src="http://servidor.adv.br/img/gr/advogado1.jpg"></a></li>
+                        <li><a href="http://servidor.adv.br/advogados.html#RUZZARIN"><img src="http://servidor.adv.br/img/gr/advogado2.jpg"></a></li>
+                        <li><a href="http://servidor.adv.br/advogados.html#SANTOS"><img src="http://servidor.adv.br/img/gr/advogado3.jpg"></a></li>
+                        <li><a href="http://servidor.adv.br/advogados.html#RODRIGUES"><img src="http://servidor.adv.br/img/gr/advogado4.jpg"></a></li>
+                        <li><a href="http://servidor.adv.br/advogados.html#REICHENBACH"><img src="http://servidor.adv.br/img/gr/advogado5.jpg"></a></li>
+                        
+                        <li><a href="http://servidor.adv.br/advogados.html#HILÁRIO"><img src="http://servidor.adv.br/img/gr/advogado7.jpg"></a></li>
+                        <li><a href="http://servidor.adv.br/advogados.html#ROVEDA"><img src="http://servidor.adv.br/img/gr/advogado8.jpg"></a></li>
+                        <li><a href="http://servidor.adv.br/advogados.html#PREDIGER"><img src="http://servidor.adv.br/img/gr/advogado9.jpg"></a></li>
+                        <li><a href="http://servidor.adv.br/advogados.html#FERNANDES"><img src="http://servidor.adv.br/img/gr/advogado11.jpg"></a></li>
+                        <li><a href="http://servidor.adv.br/advogados.html#BARBOSA"><img src="http://servidor.adv.br/img/gr/advogado12.jpg"></a></li>
+                        <li><a href="http://servidor.adv.br/advogados.html#MAGALHAES"><img src="http://servidor.adv.br/img/gr/advogado14.jpg"></a></li>
+                        <li><a href="http://servidor.adv.br/advogados.html#BUENO"><img src="http://servidor.adv.br/img/gr/advogado15.jpg"></a></li>
+                    </ul>
+                </div>
+
+                <div class="destaque-blog">
+                    <ul>
+                        <li>
+                            <div cg-busy="rssDireitoDosConcursos1Promise"></div>
+                            <h3><a href="{{rssDireitoDosConcursos1.url}}" target="_blank">{{rssDireitoDosConcursos1.titulo}}</a></h3>
+                            <a href="http://www.direitodosconcursos.com.br" target="_blank" class="category">Blog Direito dos Concursos</a>
+                            <p>{{rssDireitoDosConcursos1.resumo}} <a href="{{rssDireitoDosConcursos1.url}}" target="_blank">Continue lendo »</a></p>
+                        </li>
+                        <li>
+                            <div cg-busy="rssServidorLegal1Promise"></div>
+                            <h3><a href="{{rssServidorLegal1.url}}" target="_blank">{{rssServidorLegal1.titulo}}</a></h3>
+                            <a href="http://www.blogservidorlegal.com.br" target="_blank" class="category">Blog Servidor Legal</a>
+                            <p>{{rssServidorLegal1.resumo}} <a href="{{rssServidorLegal1.url}}" target="_blank">Continue lendo »</a></p>
+                        </li>
+                        <li>
+                            <div cg-busy="noticiaInfogrevePromise"></div>
+                            <h3><a href="{{noticiaInfogreve.url}}" target="_blank">{{noticiaInfogreve.titulo}}</a></h3>
+                            <a href="http://www.infogreve.com.br" target="_blank" class="category">Infogreve</a>
+                            <p>{{noticiaInfogreve.resumo}} <a href="{{noticiaInfogreve.url}}" target="_blank">Continue lendo »</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <!--
+                <div class="lei-8112">
+                    <p>Já são mais de 250 discussões em nosso site sobre a Lei 8.112!<a href="">Leia e participe também.</a></p>
+                </div>
+                -->
+            </div>
+
+
+
+            			<!-- Copy start -->
+            			<!-- mobile footer start -->
+
+
+            			<div class="cen">
+            			<div class="full">
+            			<h1 align="center" >ONDE ESTAMOS</h1>
+            			</div>
+            		   <div class="col-2">
+            		   <div class="con">
+            				<h2>Brasília</h2>
+            				<div class="se"><img src="img/ui/map.png" alt="" /> <span><a href="http://servidor.adv.br/enderecos.html">Ver Endereço</a></span></div>
+            				<div class="se"><img src="img/ui/phone.png" alt="" /> <span>Ligar</span> </div>
+            		   </div>
+            		   </div>
+            			<div class="col-2 ">
+            			<div class="con">
+                            <h2>Belo Horizonte</h2>
+            				<div class="se"><img src="img/ui/map.png" alt="" /> <span><a href="http://servidor.adv.br/enderecos.html">Ver Endereço</a></span></div>
+            				<div class="se"><img src="img/ui/phone.png" alt="" /> <span>Ligar</span> </div>
+                        </div>
+            			</div>
+            			<div class="col-2 ">
+            			<div class="con">
+                            <h2>Rio de Janeiro</h2>
+            				<div class="se"><img src="img/ui/map.png" alt="" /> <span><a href="http://servidor.adv.br/enderecos.html">Ver Endereço</a></span></div>
+            				<div class="se"><img src="img/ui/phone.png" alt="" /> <span>Ligar</span> </div>
+                        </div>
+            			</div>
+            			<div class="col-2 ">
+            				<div class="con">
+            					<h2>Santa Maria</h2>
+            					<div class="se"><img src="img/ui/map.png" alt="" /> <span><a href="http://servidor.adv.br/enderecos.html">Ver Endereço</a></span></div>
+            					<div class="se"><img src="img/ui/phone.png" alt="" /> <span>Ligar</span> </div>
+            				</div>
+            				</div>
+            			</div>
+
+
+            			<!-- mobile footer end -->
+
+            			<!-- Copy End -->
+
+
+            <footer>
+               <div class="redes">
+                    <p><span>&copy; 2015</span> Cassel Ruzzarin Santos Rodrigues Advogados <br/>Todos os direitos reservados</p>
+                     <a href="https://twitter.com/servidoradv" target="_blank" class="bt-twitter">Twitter</a>
+                    <a href="https://www.facebook.com/servidoradv" target="_blank" class="bt-facebook">Facebook</a>
+               </div>
+               <div class="onde-estamos">
+                    <h2>Onde Estamos</h2>
+                    <ul>
+                        <li>
+                            <p>Brasília</p>
+                            <a href="http://servidor.adv.br/enderecos.html">Veja o endereço</a>
+                        </li>
+                        <li>
+                            <p>Belo Horizonte</p>
+                            <a href="http://servidor.adv.br/enderecos.html">Veja o endereço</a>
+                        </li>
+                        <li>
+                            <p>Rio de Janeiro</p>
+                            <a href="http://servidor.adv.br/enderecos.html">Veja o endereço</a>
+                        </li>
+                        <li>
+                            <p>Santa Maria</p>
+                            <a href="http://servidor.adv.br/enderecos.html">Veja o endereço</a>
+                        </li>
+                    </ul>
+               </div>
+            </footer>
+        </div>
+    </div>
+
+    <div id="dialog">
+      <img src="/img/banner-recesso-fimdeano.png" alt="Recesso de Fim de Ano" />
+    </div>
+    
+    <!--[if lt IE 7]>
+        <style type='text/css'>
+            #simplemodal-container a.modalCloseImg {
+                background:none;
+                right:-14px;
+                width:22px;
+                height:26px;
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+                    src='/img/x.png', sizingMethod='scale'
+                );
+            }
+        </style>
+    <![endif]-->
+
+    <style type="text/css">
+
+        /* Overlay */
+        #simplemodal-overlay {background-color:#000;}
+        
+        /* Container */
+        #simplemodal-container {height:600px; width:800px; color:#bbb;}
+        #simplemodal-container img{ width: 100%}
+        #simplemodal-container .simplemodal-data {padding:8px;}
+        #simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+        #simplemodal-container a {color:#ddd;}
+        #simplemodal-container a.modalCloseImg {background:url('/img/x.png') no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+        #simplemodal-container h3 {color:#84b8d9;}
+
+    </style>
+
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+ <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script src="/js/jquery.carousel.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/twitter.css" media="screen" />
+<script src="/js/tweecool.js"></script>
+
+<script src="/js/jquery.simplemodal.1.4.4.min.js"></script>
+
+ <script type="text/javascript">
+     $(document).ready(function () {
+
+         //Modal de Recesso
+         $("#dialog").modal({
+            opacity:80,
+            overlayCss: {backgroundColor:"#fff"},
+            maxWidth: 500
+        });
+
+       // Carousel
+
+         $(".destaque-advogados").carousel( {
+            pagination: false,
+            loop: true,
+            autoSlide: true,
+            dispItems:6
+        });
+		$(".slider").carousel({
+	        pagination: false,
+	        loop: true,
+	        autoSlide: true,
+	        autoSlideInterval: 5000,
+	        dispItems:1,
+	        nextBtn:'<input type="button" value="&gt;" />',
+	        prevBtn:'<input type="button" value="&lt;" />',
+            prevBtnInsert: 'insertBefore',
+            nextBtnInsert: 'insertBefore'
+	    });
+        // Twitter
+        $('.tweets').tweecool({
+          //settings
+           username : 'servidoradv',
+           limit : 2, // Number of tweets to show
+           profile_image : false, // Show profile image
+           show_time : true, // Show tweet time
+           show_media : false,
+           show_media_size: 'thumb'  //values: small, large, thumb, medium
+        });
+
+    });
+ </script>
+
+
+
+
+ <!-- Copy start -->
+ <!-- New jQuery Code Start -->
+
+
+
+ <script type="text/javascript">
+  //New Slider jQuery Start
+  $(document).ready(function() {
+
+  $("#owl-demo").owlCarousel({
+
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+    navigationText : ["&lt;","&gt"],
+
+      // "singleItem:true" is a shortcut for:
+      // items : 1,
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
+  });
+
+
+  //Mobile Nav Menu Start
+    jQuery('.m-menu').click(function(){
+      jQuery('header nav ul').slideToggle();
+    });
+  //Mobile Nav Menu End
+ });
+
+ </script>
+ 
+ <!-- Código Inspectlet -->
+ <script type="text/javascript" id="inspectletjs">
+window.__insp = window.__insp || [];
+__insp.push(['wid', 871816691]);
+(function() {
+function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+})();
+</script>
+
+
+
+ <!-- New jQuery Code Start -->
+ <!-- Copy End -->
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35435323-11', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35435323-12', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- Hotjar Tracking Code for servidor.adv.br -->
+<script>
+    (function(f,b){
+        var c;
+        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+        f._hjSettings={hjid:33375, hjsv:4};
+        c=b.createElement("script");c.async=1;
+        c.src="//static.hotjar.com/c/hotjar-"+f._hjSettings.hjid+".js?sv="+f._hjSettings.hjsv;
+        b.getElementsByTagName("head")[0].appendChild(c);
+    })(window,document);
+</script>
+
+
+
+</body>
+</html>

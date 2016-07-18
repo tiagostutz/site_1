@@ -1,0 +1,39 @@
+hr
+{
+	display: none;
+}
+
+.inv
+{
+	display: none !important;
+}
+
+.clear
+{
+	clear: both;
+}
+
+*.clean
+{
+	width: auto;
+	height: auto;
+	border: none;
+	background: none;
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float:right;
+}
+
+.upper
+{
+	text-transform: uppercase;
+}
+
+

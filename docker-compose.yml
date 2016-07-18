@@ -1,0 +1,32 @@
+version: '2'
+
+networks:
+  app_site_network:
+    external: true
+
+
+services: 
+  atual_site_servidoradv:
+    image: node:0.12
+
+    networks:
+      - app_site_network
+
+    ports:
+      - "8000:8000"     
+    
+    volumes:
+      - /var/app/site/atual/src:/var/www
+    
+    command: node /var/www/server.js
+    
+    labels:
+      - "traefik.backend=site_www"
+      - "traefik.frontend.rule=Host:www2.servidor.adv.br"
+      - "traefik.port=8000"
+      - "traefik.docker.network=app_site_network"
+      - "traefik.weight=50" 
+      - "traefik.enable=false"
+   
+    environment:
+      - VIRTUAL_HOST=www2.servidor.adv.br

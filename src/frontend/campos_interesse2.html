@@ -1,0 +1,708 @@
+<!DOCTYPE HTML>
+<html ng-app="camposInteresseApp" ng-controller="CamposInteresseController as camposInteresseController">
+    <head>
+<meta charset=utf-8>
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cassel Ruzzarin Santos Rodrigues Advogados - {{tituloPagina}} - {{ campoInteresse.titulo }}</title>
+<meta name="title" content="{{tituloPagina}} - {{ campoInteresse.titulo }}">
+<meta name="description" content="{{campoInteresse.intro | htmlToPlaintext}}">
+<meta name="og:description" content="{{campoInteresse.intro | htmlToPlaintext}}">
+<meta property="og:locale" content="pt_BR">
+<!-- Google will often use this as its description of your page/site. Make it good. -->
+<meta property="og:site_name" content="Cassel Ruzzarin Santos Rodrigues Advogados" />
+<meta property="og:title" content="{{tituloPagina}} - {{ campoInteresse.titulo }}" />
+<meta property="og:url" content="{{siteURL}}" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="{{campoInteresse.imagemfundoaspas}}" />
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="879">
+<meta property="og:image:height" content="262">
+<meta name="fragment" content="!">
+
+<!-- Dublin Core Metadata : http://dublincore.org/ -->
+<meta name="DC.title" content="Cassel Ruzzarin Santos Rodrigues Advogados">
+<meta name="DC.subject" content="">
+<meta name="DC.creator" content="Tiago Stutz">
+<!--  Mobile Viewport Fix -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<!-- This is the traditional favicon. -->
+<link rel="shortcut icon" type="image/x-icon" href="http://servidor.adv.br/img/favicon.ico" />
+<!-- The is the icon for iOS's Web Clip. -->
+<link rel="apple-touch-icon" href="http://servidor.adv.br/img/apple-touch-icon.png">
+<!-- CSS: screen, mobile & print are all in the same file -->
+<link rel="stylesheet" type="text/css" href="http://servidor.adv.br/css/interface.css" media="screen" title="html5doctor.com Reset Stylesheet" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-sanitize.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="http://servidor.adv.br/css/angular-busy.min.css" media="screen" />
+<script src="http://servidor.adv.br/js/angular-busy.min.js"></script>
+
+<script src="http://servidor.adv.br/campos_interesse2.html.angular.js"></script>
+
+<!-- this is the javascript allowing html5 to run in older browsers -->
+<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+<script src="http://servidor.adv.br/js/modernizr.custom.js"></script>
+
+
+  <!-- Copy Start -->
+
+  <script src="http://servidor.adv.br/owl-carousel/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="http://servidor.adv.br/owl-carousel/owl.carousel.css" />
+  <link rel="stylesheet" href="http://servidor.adv.br/owl-carousel/owl.theme.css" />
+
+
+  <!-- Copy End -->
+
+  <base href="/" />
+
+
+</head>
+
+<body>
+    <div id="main-top">
+        <div class="center">
+            <header>
+                <div class="nav-blog">
+                    <h2>Defesa do Servidor Público: <span>Do Concurso à aposentadoria</span></h2>
+                    <ul>
+                        <li><a href="http://www.infogreve.com.br/">InfoGreve</a></li>
+                        <li><a href="http://www.blogservidorlegal.com.br/">Blog Servidor Legal</a></li>
+                        <li><a href="http://www.direitodosconcursos.com.br/">Blog Direito dos Concursos</a></li>
+                    </ul>
+                </div>
+                 <div id="nav">
+                    <h1><a href="http://servidor.adv.br/index.html">Cassel Ruzzarin Santos Rodrigues - Advogados</a></h1>
+                    <nav>
+
+            						<!-- Mobile menu Icon Start-->
+            						<a  href="#" class="m-menu" ><img src="../img/ui/menu.png" alt="" /></a>
+            						<!-- Mobile menu Icon Start-->
+
+                        <ul>
+                            <li><a href="http://servidor.adv.br/escritorio.html">Escritório</a></li>
+                            <li><a href="http://servidor.adv.br/advogados.html">Advogados</a></li>
+                            <li><a href="http://servidor.adv.br/clientes.html">Clientes</a></li>
+                            <li><a ng-href="http://servidor.adv.br/contato.html/ref/{{ tituloPaginaURL }}/menu">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="content">
+                <div class="back-branco">
+                    <article>
+                        <div class="box-itens-escritorio box-itens-campos">
+
+
+                          						<!--  Copy start -->
+                          						<!-- Mobile Slider  -->
+
+                          								<div class="dis">
+                          									<ul id="owl-demo2" class="owl-carousel owl-theme" >
+                          										<li class="item2" ng-class="selecaoMenuCSS">
+                          											<a href="http://servidor.adv.br/interesse-clientes/selecao-e-provimento" title="Seleção e provimento">
+                          												<img src="../img/ui/selecao_provimento.svg" />
+
+                          											</a>
+                          										</li>
+                          										<li class="item2" ng-class="exercicioMenuCSS">
+                          											<a href="http://servidor.adv.br/interesse-clientes/exercicio-e-afastamento" title="Exercício e afastamento">
+                          												<img src="../img/ui/exercicio_afastamento.svg" />
+
+                          											</a>
+                          										</li>
+                          										<li class="item2" ng-class="remuneracaoMenuCSS">
+                          											<a href="http://servidor.adv.br/interesse-clientes/remuneracao" title="Remuneração">
+                          												<img src="../img/ui/remuneracao.svg" />
+
+                          											</a>
+                          										</li>
+                          										<li class="item2" ng-class="tributoMenuCSS">
+                          											<a href="http://servidor.adv.br/interesse-clientes/tributos" title="Tributos">
+                          												<img src="../img/ui/tributos.svg" />
+
+                          											</a>
+                          										</li>
+                          										<li class="item2" ng-class="segurancaMenuCSS">
+                          											<a href="http://servidor.adv.br/interesse-clientes/saude-e-seguranca-do-trabalho" title="Saúde e segurança no trabalho">
+                          												<img src="../img/ui/saude_seguranca_trabalho.svg" />
+
+                          											</a>
+                          										</li>
+                          										<li class="item2" ng-class="disciplinaMenuCSS">
+                          											<a href="http://servidor.adv.br/interesse-clientes/disciplina-probidade-e-contas" title="Disciplina, probidade e contas">
+                          												<img src="../img/ui/disciplina_probidade_contas.svg" />
+
+                          											</a>
+                          										</li>
+                          										<li class="item2" ng-class="sindicalMenuCSS">
+                          											<a href="http://servidor.adv.br/interesse-clientes/liberdade-sindical-e-associativa" title="Liberdade sindical e associativa">
+                          												<img src="../img/ui/liberdade_sindical_associativa.svg" />
+
+                          											</a>
+                          										</li>
+                          										<li class="item2"  ng-class="prerrogativaMenuCSS">
+                          											<a href="http://servidor.adv.br/interesse-clientes/defesa-de-prerrogativas" title="Defesa de prerrogativas">
+                          												<img src="../img/ui/defesa_prerrogativas.svg" />
+
+                          											</a>
+                          										</li>
+                          										<li class="item2" ng-class="socialMenuCSS">
+                          											<a href="http://servidor.adv.br/interesse-clientes/seguridade-social" title="Seguridade social">
+                          												<img src="../img/ui/seguridade_social.svg" />
+
+                          											</a>
+                          										</li>
+                          									</ul>
+
+                          								</div>
+
+
+                          							<!--  Copy start -->
+                          							<!-- Mobile Slider  -->
+
+
+                            <div class="campos_interesse_menu">
+                                <ul>
+                                    <li ng-class="selecaoMenuCSS">
+                                        <a href="http://servidor.adv.br/interesse-clientes/selecao-e-provimento" title="Seleção e provimento">
+                                            <img src="http://servidor.adv.br/img/ui/selecao_provimento.svg" />
+
+                                        </a>
+                                    </li>
+                                    <li ng-class="exercicioMenuCSS">
+                                        <a href="http://servidor.adv.br/interesse-clientes/exercicio-e-afastamento" title="Exercício e afastamento">
+                                            <img src="http://servidor.adv.br/img/ui/exercicio_afastamento.svg" />
+
+                                        </a>
+                                    </li>
+                                    <li ng-class="remuneracaoMenuCSS">
+                                        <a href="http://servidor.adv.br/interesse-clientes/remuneracao" title="Remuneração">
+                                            <img src="http://servidor.adv.br/img/ui/remuneracao.svg" />
+
+                                        </a>
+                                    </li>
+                                    <li ng-class="tributoMenuCSS">
+                                        <a href="http://servidor.adv.br/interesse-clientes/tributos" title="Tributos">
+                                            <img src="http://servidor.adv.br/img/ui/tributos.svg" />
+
+                                        </a>
+                                    </li>
+                                    <li ng-class="segurancaMenuCSS">
+                                        <a href="http://servidor.adv.br/interesse-clientes/saude-e-seguranca-do-trabalho" title="Saúde e segurança no trabalho">
+                                            <img src="http://servidor.adv.br/img/ui/saude_seguranca_trabalho.svg" />
+
+                                        </a>
+                                    </li>
+                                    <li ng-class="disciplinaMenuCSS">
+                                        <a href="http://servidor.adv.br/interesse-clientes/disciplina-probidade-e-contas" title="Disciplina, probidade e contas">
+                                            <img src="http://servidor.adv.br/img/ui/disciplina_probidade_contas.svg" />
+
+                                        </a>
+                                    </li>
+                                    <li ng-class="sindicalMenuCSS">
+                                        <a href="http://servidor.adv.br/interesse-clientes/liberdade-sindical-e-associativa" title="Liberdade sindical e associativa">
+                                            <img src="http://servidor.adv.br/img/ui/liberdade_sindical_associativa.svg" />
+
+                                        </a>
+                                    </li>
+                                    <li ng-class="prerrogativaMenuCSS">
+                                        <a href="http://servidor.adv.br/interesse-clientes/defesa-de-prerrogativas" title="Defesa de prerrogativas">
+                                            <img src="http://servidor.adv.br/img/ui/defesa_prerrogativas.svg" />
+
+                                        </a>
+                                    </li>
+                                    <li ng-class="socialMenuCSS">
+                                        <a href="http://servidor.adv.br/interesse-clientes/seguridade-social" title="Seguridade social">
+                                            <img src="http://servidor.adv.br/img/ui/seguridade_social.svg" />
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="campos_interesse_exemplos">
+                                <section>
+                                    <h2><span>{{ campoInteresse.titulo }}</span></h2>
+                                    <div ng-bind-html="campoInteresse.intro"></div>
+                                </section>
+                                <section id="exemplo_principal" ng-style="{'background-image':'url('+ campoInteresse.imagemfundoaspas + ')'}" style="background-position-y: 0px; color: white; padding: 2rem 2rem; background-repeat: repeat-y">
+                                    <h2 style="color: white">
+                                        "<q style="background: rgba(44, 31, 31, 0.8)" ng-bind-html="campoInteresse.citacaoLead"></q>"
+                                    </h2>
+                                    <ul>
+                                        <li style="margin-left: 12px;">
+                                            <a ng-href="http://servidor.adv.br/contato.html/ref/{{ tituloPaginaURL }}/aspas/" style="text-decoration: none">
+                                                <div class="calltoaction">Você também tem essa dúvida? </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div style="display:none">
+                                        <form name="form" id="conversion-form" action="https://www.rdstation.com.br/api/1.2/conversions" method="POST">
+                                            <input type="hidden" name="token_rdstation" value="3d69043302eb44d8bb2a5c3fa34b4bca">
+                                            <input type="hidden" name="identificador" value="contato-campos-interesse">
+                                            <script type="text/javascript">
+                                                jQuery("[name='identificador']").val("campo-interesse__"+ window.location.href.substr(window.location.href.lastIndexOf("/")+1))
+                                            </script>
+
+                                            <div class="field">
+                                                <input name="nome" type="text" placeholder="Seu Nome..." autofocus="" required="">
+                                            </div>
+
+                                            <div class="field">
+                                                <input name="email" type="email" placeholder="Seu e-mail..." required="">
+                                            </div>
+
+                                            <div class="field">
+                                                <input name="ddd-telefone" type="tel" placeholder="(00) 0000-0000">
+                                            </div>
+
+                                            <div class="field">
+                                                <textarea rows="10" name="mensagem" placeholder="Mensagem..."></textarea>
+                                            </div>
+
+                                            <div class="actions" align="right" style="margin-top: 20px;">
+                                                <input type="hidden" name="c_utmz" id="c_utmz" value="">
+                                                <script type="text/javascript">
+                                                    function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0;d<c.length;d++){var e=c[d];while(e.charAt(0)==" ")e=e.substring(1,e.length);if(e.indexOf(b)==0){return e.substring(b.length,e.length)}}return null}try{document.getElementById("c_utmz").value=read_cookie("__utmz")}catch(err){}
+                                                </script>
+                                                <input class="col span_6_of_12" type="submit" id="cf_submit" value="Enviar mensagem">
+                                                <div class="clear"></div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </section>
+                                <section id="exemplosCampoInteresse">
+                                    <h2>Confira abaixo mais exemplos sobre esse assunto</h2>
+                                    <ul class="exemplos">
+                                        <li ng-repeat="exemplo in campoInteresse.exemplos">
+                                            <div class="wrapper">
+                                                <h3>{{ exemplo.title }}</h3>
+                                                <div ng-bind-html="exemplo.loadedData.texto"></div>
+                                                <div class="link">
+                                                    <a ng-href="/contato.html/ref/{{ tituloPaginaURL }}/exemplo/{{ toURL(exemplo.title) }}">quer mais informações?</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </section>
+                            </div>
+                            <div style="clear:both"></div>
+
+                            <section id="segmentos_relacionados">
+                                <h2>Você tem outro interesse?</h2>
+                                <ul>
+                                    <li>
+                                        <a href="http://servidor.adv.br/campos_interesse/selecao-e-provimento">
+                                            <img src="http://servidor.adv.br/img/ui/selecao_provimento.svg" />
+                                            <h1>Seleção e provimento</h1>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://servidor.adv.br/campos_interesse/exercicio-e-afastamento">
+                                            <img src="http://servidor.adv.br/img/ui/exercicio_afastamento.svg" />
+                                            <h1>Exercício e afastamento</h1>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://servidor.adv.br/campos_interesse/remuneracao">
+                                            <img src="http://servidor.adv.br/img/ui/remuneracao.svg" />
+                                            <h1>Remuneração</h1>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://servidor.adv.br/campos_interesse/tributos">
+                                            <img src="http://servidor.adv.br/img/ui/tributos.svg" />
+                                            <h1>Tributos</h1>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://servidor.adv.br/campos_interesse/saude-e-seguranca-do-trabalho">
+                                            <img src="http://servidor.adv.br/img/ui/saude_seguranca_trabalho.svg" />
+                                            <h1>Saúde e segurança do trabalho</h1>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://servidor.adv.br/campos_interesse/disciplina-probidade-e-contas">
+                                            <img src="http://servidor.adv.br/img/ui/disciplina_probidade_contas.svg" />
+                                            <h1>Disciplina, probidade e contas</h1>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://servidor.adv.br/campos_interesse/liberdade-sindical-e-associativa">
+                                            <img src="http://servidor.adv.br/img/ui/liberdade_sindical_associativa.svg" />
+                                            <h1>Liberdade sindical e associativa</h1>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://servidor.adv.br/campos_interesse/defesa-de-prerrogativas">
+                                            <img src="http://servidor.adv.br/img/ui/defesa_prerrogativas.svg" />
+                                            <h1>Defesa de prerrogativas</h1>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://servidor.adv.br/campos_interesse/seguridade-social">
+                                            <img src="http://servidor.adv.br/img/ui/seguridade_social.svg" />
+                                            <h1>Seguridade social</h1>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <h2 style="margin-top: 70px;">Qual é o seu perfil?</h2>
+                                <ul id="listagem_segmentos">
+                                    <li>
+                                        <a href="http://servidor.adv.br/segmentos/entidades-de-classe">
+                                            <img src="http://servidor.adv.br/img/ui/entidades_classe.svg" width="48px" />
+                                            <h1>Entidades de classe</h1>
+                                        </a>
+
+                                    </li>
+                                    <li style="width: 26%">
+                                        <a href="http://servidor.adv.br/segmentos/candidatos-a-cargo-publico">
+                                            <img src="http://servidor.adv.br/img/ui/concurso_selecao_flat.svg" width="48px" />
+                                            <h1>Candidatos a cargos públicos</h1>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://servidor.adv.br/segmentos/servidores-ativos">
+                                            <img src="http://servidor.adv.br/img/ui/servidores_ativa.svg" width="48px" />
+                                            <h1>Servidores ativos</h1>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://servidor.adv.br/segmentos/servidores-inativos">
+                                            <img src="http://servidor.adv.br/img/ui/aposentadoria.svg" width="48px" />
+                                            <h1>Servidores aposentados</h1>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-bottom">
+
+        <div class="center">
+
+            <div class="content">
+
+            </div>
+
+
+                        <!-- Copy start -->
+                        <!-- mobile footer start -->
+
+
+                        <div class="cen">
+                        <div class="full">
+                        <h1 align="center" >ONDE ESTAMOS</h1>
+                        </div>
+                         <div class="col-2">
+                         <div class="con">
+                          <h2>Brasília</h2>
+                          <div class="se"><img src="http://servidor.adv.br/img/ui/map.png" alt="" /> <span><a href="http://servidor.adv.br/enderecos.html">Ver Endereço</a></span></div>
+                          <div class="se"><img src="http://servidor.adv.br/img/ui/phone.png" alt="" /> <span>Ligar</span> </div>
+                         </div>
+                         </div>
+                        <div class="col-2 ">
+                        <div class="con">
+                                  <h2>Belo Horizonte</h2>
+                          <div class="se"><img src="http://servidor.adv.br/img/ui/map.png" alt="" /> <span><a href="http://servidor.adv.br/enderecos.html">Ver Endereço</a></span></div>
+                          <div class="se"><img src="http://servidor.adv.br/img/ui/phone.png" alt="" /> <span>Ligar</span> </div>
+                              </div>
+                        </div>
+                        <div class="col-2 ">
+                        <div class="con">
+                                  <h2>Rio de Janeiro</h2>
+                          <div class="se"><img src="http://servidor.adv.br/img/ui/map.png" alt="" /> <span><a href="http://servidor.adv.br/enderecos.html">Ver Endereço</a></span></div>
+                          <div class="se"><img src="http://servidor.adv.br/img/ui/phone.png" alt="" /> <span>Ligar</span> </div>
+                              </div>
+                        </div>
+                        <div class="col-2 ">
+                          <div class="con">
+                            <h2>Santa Maria</h2>
+                            <div class="se"><img src="http://servidor.adv.br/img/ui/map.png" alt="" /> <span><a href="http://servidor.adv.br/enderecos.html">Ver Endereço</a></span></div>
+                            <div class="se"><img src="http://servidor.adv.br/img/ui/phone.png" alt="" /> <span>Ligar</span> </div>
+                          </div>
+                          </div>
+                        </div>
+
+
+                        <!-- mobile footer end -->
+
+                        <!-- Copy End -->
+
+
+            <footer>
+
+               <div class="redes">
+                    <p><span>&copy; 2015</span> Cassel Ruzzarin Santos Rodrigues Advogados <br/>Todos os direitos reservados</p>
+                     <a href="https://twitter.com/servidoradv" target="_blank" class="bt-twitter">Twitter</a>
+                    <a href="https://www.facebook.com/servidoradv" target="_blank" class="bt-facebook">Facebook</a>
+               </div>
+
+               <div class="onde-estamos">
+                    <h2>Onde Estamos</h2>
+                    <ul>
+                        <li>
+                            <p>Brasília</p>
+                            <a href="http://servidor.adv.br/enderecos.html">Veja o endereço</a>
+                        </li>
+                        <li>
+                            <p>Belo Horizonte</p>
+                            <a href="http://servidor.adv.br/enderecos.html">Veja o endereço</a>
+                        </li>
+                        <li>
+                            <p>Rio de Janeiro</p>
+                            <a href="http://servidor.adv.br/enderecos.html">Veja o endereço</a>
+                        </li>
+                        <li>
+                            <p>Santa Maria</p>
+                            <a href="http://servidor.adv.br/enderecos.html">Veja o endereço</a>
+                        </li>
+                    </ul>
+               </div>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="contato_form" class="form-contato">
+        <form name="form" id="conversion-form" action="https://www.rdstation.com.br/api/1.2/conversions" method="POST">
+            <input name="token_rdstation" type="hidden" value="3d69043302eb44d8bb2a5c3fa34b4bca">
+            <input name="identificador" type="hidden" value="contato-site">
+
+              <ul>
+                <li><input placeholder="SEU NOME" type="text" name="nome" id="contato_nome" size="30"></li>
+                <li><input placeholder="E-MAIL PARA RETORNO DO CONTATO" type="text" id="contato_email" name="email_lead" size="30"></li>
+                <li><input placeholder="TELEFONE PARA RETORNO DO CONTATO" type="text" id="contato_celular" name="telefone" size="30"></li>
+
+                <li>
+                    <div class="customselect" style="width: auto; border: none; margin: 0px;">
+                    <select placeholder="Seu contato é sobre..." name="especialidade" style="background: white; width: 52%">
+                    </div>
+                    <option value="Indefinido">Qual seu perfil?</option>
+                    <option value="Concurso Público">Concurso Público</option>
+                    <option value="Servidor Ativo">Servidor Ativo</option>
+                    <option value="Servidor Aposentado">Servidor Aposentado</option>
+                    <option value="Entidades de classe">Entidades de classe</option>
+                </select>
+
+                </li>
+                <li><textarea placeholder="Mensagem" name="mensagem" rows="5" maxlength="4000" style="text-transform: inherit; font-style: normal; font-family: 'Avenir Next', sans-serif; width: 50%; padding: 10px;"></textarea></li>
+
+            </ul>
+            <div id="mensagem_erro">
+
+            </div>
+            <div class="actions" align="right" style="margin-top: 20px;text-align:center">
+                <div class="col span_4_of_12"></div>
+                <input type="hidden" name="c_utmz" id="c_utmz" value="" />
+                <script type="text/javascript">
+                    function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0;d<c.length;d++){var e=c[d];while(e.charAt(0)==" ")e=e.substring(1,e.length);if(e.indexOf(b)==0){return e.substring(b.length,e.length)}}return null}try{document.getElementById("c_utmz").value=read_cookie("__utmz")}catch(err){}
+                </script>
+                <input id="cf_submit" class="enviar" type="submit" value="ENVIAR MENSAGEM" style="width: 45%" />
+                <div class="clear"></div>
+            </div>
+
+        </form>
+    </div>
+
+
+
+    <script type="text/javascript" src="//rdstation-static.s3.amazonaws.com/js/jquery.form/2.02/jquery.form.js"></script>
+    <script>
+                function createCookie(a, b, c) {
+                    if (c) {
+                        var d = new Date;
+                        d.setTime(d.getTime() + c * 24 * 60 * 60 * 1e3);
+                        var e = "; expires=" + d.toGMTString()
+                    } else var e = "";
+                    document.cookie = a + "=" + b + e + "; path=/"
+                }
+
+                function readCookie(a) {
+                    var b = a + "=";
+                    var c = document.cookie.split(";");
+                    for (var d = 0; d < c.length; d++) {
+                        var e = c[d];
+                        while (e.charAt(0) == " ") e = e.substring(1, e.length);
+                        if (e.indexOf(b) == 0) return e.substring(b.length, e.length)
+                    }
+                    return null
+                }
+
+                function eraseCookie(a) {
+                    createCookie(a, "", -1)
+                }
+
+                function saveConversion() {}
+
+                function setUtmzVal() {
+                    try {
+                        var a = readCookie("__utmz");
+                        $("input[type=hidden][name=c_utmz]").val(a)
+                    } catch (b) {}
+                }
+
+                function conversionSuccess(a) {
+                    $("#cf_submit").attr("value", "Mensagem enviada com sucesso!");
+                    $("#cf_submit").addClass("button-success");
+                }
+
+                function conversionError(a) {
+                    $("#cf_submit").attr("value", "Erro ao enviar mensagem");
+                    $("#cf_submit").removeAttr("disabled");
+                    $("#cf_submit").addClass("button-error")
+                }
+
+                function parseRDR(a) {}
+
+                function preSubmit() {
+                    var erros = "";
+                    if ($("#contato_nome").val().length==0) {
+                        erros += "<p>Preencha o <strong>NOME</strong>, por favor</p>";
+                    }
+                    if ($("#contato_email").val().length==0) {
+                        erros += "<p>Preencha o <strong>E-MAIL</strong>, por favor</p>";
+                    }
+                    if ($("#contato_celular").val().length==0) {
+                        erros += "<p>Preencha o número do seu <strong>CELULAR</strong>, por favor</p>";
+                    }
+                    $("#mensagem_erro").html("");
+                    if (erros.length > 0) {
+                        $("#mensagem_erro").html(erros);
+                        return false;
+                    }else{
+                        $("#cf_submit").attr("value", "Aguarde. Enviando mensagem...");
+                        $("#cf_submit").attr("disabled", "disabled");
+                        $("#cf_submit").addClass("button-busy");
+                        return true;
+                    }
+                }
+
+                function ajaxCb(a) {
+                    if (a.status === 200) {
+                        conversionSuccess(a)
+                    } else {
+                        conversionError(a)
+                    }
+                }
+                if (typeof console == "undefined" || typeof console.log == "undefined") var console = {
+                    log: function () {}
+                };
+
+                $(document).ready(function (a) {
+                    setUtmzVal();
+                    var d = $("#conversion-form").attr("action") + ".js";
+                    var e = {
+                        url: d,
+                        type: "GET",
+                        dataType: "script",
+                        beforeSubmit: preSubmit,
+                        complete: ajaxCb
+                    };
+                    $("#conversion-form").ajaxForm(e)
+                });
+     </script>
+
+
+      <!-- Copy start -->
+      <!-- New jQuery Code Start -->
+
+
+
+      <script type="text/javascript">
+     	//New Slider jQuery Start
+     	$(document).ready(function() {
+
+
+     	  var owl = $("#owl-demo2");
+
+     	  owl.owlCarousel({
+
+     		  itemsCustom : [
+     			[0, 3],
+     			[450, 3],
+     			[600, 4],
+     			[700, 4],
+     			[1000, 4],
+     			[1200, 4],
+     			[1400, 5],
+     			[1600, 6]
+     		  ],
+     		  navigation : true,
+     	  navigationText : ["&lt;","&gt"],
+     	  });
+
+
+     	//Mobile Nav Menu Start
+     		jQuery('.m-menu').click(function(){
+     			jQuery('header nav ul').slideToggle();
+          return false;
+     		});
+     	//Mobile Nav Menu End
+     });
+
+
+      </script>
+
+
+      <!-- Copy end -->
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35435323-11', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35435323-12', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- Hotjar Tracking Code for servidor.adv.br -->
+<script>
+    (function(f,b){
+        var c;
+        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+        f._hjSettings={hjid:33375, hjsv:4};
+        c=b.createElement("script");c.async=1;
+        c.src="//static.hotjar.com/c/hotjar-"+f._hjSettings.hjid+".js?sv="+f._hjSettings.hjsv;
+        b.getElementsByTagName("head")[0].appendChild(c);
+    })(window,document);
+</script>
+
+
+</body>
+</html>
